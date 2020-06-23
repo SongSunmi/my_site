@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chavy</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+
+	</script>
+	<style>
+		.headerWrap{width: 1200px;margin: 0 auto;height: 140px;
+		position: relative;padding-top:50px;}
+		.headerWrap img{position: absolute;top: 30px;}
+
+
+		.header{width: 600px;height: 30px;position: absolute;left: 300px;}
+		.header>li{float: left;width: 25%;line-height: 45px;}
+		
+		.headerTwo{width: 200px;height: 30px;position: absolute;
+			left: 1000px;}
+		.headerTwo>li{float: left;width: 50%;line-height: 45px;}
+		.box a{background-color: navy;border-radius: 45px;}
+		.headerTwo:last-child .box a{color:white}
+		
+		.header a:hover{background-color: navy; color: white;}
+		.headerTwo a:hover{background-color: navy; color: white;border-radius: 45px}
+		.headerTwo .box:hover{background-color: navy; color: black;}
+		
+		.header a{color: black; 
+            display: block;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;}
+
+        .headerTwo a{color: black; 
+            display: block;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;}
+
+        .visual{}
+        .visual .view{width: 1100px;position: relative;height: 700px;margin: 0 auto;}
+        .visual .slider li{overflow: hidden;}
+        .visual .slider img.img{position: absolute;left: 25%;}
+        .visual .visualTxt{position: absolute;right: 57%;
+        	top: 150px;width: 500px;}
+        .visual .visualTxt h3{font-size: 55px;margin-bottom: 30px; }
+        .visual .visualTxt h3 span{color: navy;}
+        .visual .visualTxt p{margin-bottom: 50px;}
+        .visual .visualTxt a{display: block;
+      	 	width: 200px;height: 60px;background: navy;color: white;border-radius: 30px;text-align: center;
+      	 	line-height: 60px;}
+	
+		.bx-wrapper{
+            -moz-box-shadow: 0 none;
+            -webkit-box-shadow: 0 none;
+            box-shadow: 0 none;
+            border: 0 none;
+            background: #fff;
+            margin-bottom: 0;}
+		.bx-wrapper .bx-pager{bottom:30px;}
+		.bx-wrapper .bx-next {right: 80px;}
+    	.bx-wrapper .bx-prev {left: 170px;}
+		
+
+	.contents{width:100%;margin: 0 auto;height: 200px;background-color: #f3f5ff;}
+	.contents .contentsTxt h3{font-size: 45px;text-align: center;padding-top: 25px;}
+	.contents .contentsTxt h3 span{color:navy;}
+	.contents .contentsTxt p{font-size: 16px;text-align: center;padding-top: 25px;color: #747474}
+
+	.contentsTwo{width: 100%;margin: 0 auto;height: 600px;background-color: skyblue;position: relative;
+	}
+	.contentsTwo .contentsTxt{position: absolute;right: 50%;
+        	top: 150px;width: 500px;}
+    .contentsTwo .contentsTxt h3{font-size: 30px;margin-bottom: 20px;}
+    .contentsTwo .contentsTxt h3 span{color:navy;}
+    .contentsTwo .contentsTxt p{margin-bottom: 30px;}
+    .contentsTwo .contentsTxt a{display: block;
+      	 	width: 200px;height: 60px;background: navy;color: white;border-radius: 30px;text-align: center;
+      	 	line-height: 60px;}
+
+	</style>
+
+</head>
+<body>
+	<header class="headerWrap">
+			<img src="images/logo.jpg" alt="">
+		<div class="header clearfix">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">How It Works</a></li>
+			<li><a href="#">Company</a></li>
+			<li><a href="#">Career</a></li>
+		</div>
+		<div class="headerTwo clearfix">
+			<li><a href="#">Sign in</a></li>
+			<li class="box"><a href="#">Register</a></li>
+		</div>
+	</header>
+
+	<div class="visual">
+		<ul class="slider">
+			<li>  <!-- w100% -->
+				<div class="view"> <!-- w1100 -->
+					<img src="images/A.png" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Financial plans for<br>every <span>person and <br>everywhere.</span></h3>
+						<p>If you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+				<li>  <!-- w100% -->
+				<div class="view"> <!-- w1100 -->
+					<img src="images/A.png" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Financial plans for<br>every <span>person and <br>everywhere.</span></h3>
+						<p>If you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="contents">
+		<contents class="contentsTxt">
+			<h3>Save money & <span>money will save you.</span></h3>
+			<p>I will tell you how to become a rich. Close the doors. Be fearful<br>when other are greedy.</p>
+		</contents>
+	</div>
+
+	<div class="contentsTwo">
+		<div class="contentsTxt">
+			<h3>The proper guide that helps<br>you to <span>unlock the real <br>potential.</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, unde.</p>
+			<a href="#" class="btnA">Request Demo</a>
+		</div>
+	</div>
+</body>
+</html>
