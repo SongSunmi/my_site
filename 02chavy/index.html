@@ -70,11 +70,15 @@
 		
 
 	.contents{width:100%;margin: 0 auto;height: 200px;background-color: #f3f5ff;}
+	.contents .full{width: 1200px; margin: 0 auto;}
+
 	.contents .contentsTxt h3{font-size: 45px;text-align: center;padding-top: 25px;}
 	.contents .contentsTxt h3 span{color:navy;}
 	.contents .contentsTxt p{font-size: 16px;text-align: center;padding-top: 25px;color: #747474}
 
-	.contentsTwo{width: 1200px;margin: 0 auto;height: 600px;background-color: skyblue;position: relative;
+	.contentsTwo{width: 1200px;margin: 0 auto;height: 600px;
+		/*background-color: skyblue;*/
+		position: relative;
 	}
 	.contentsTwo .contentsTxt{position: absolute;right: 50%;
         	top: 150px;width: 500px;}
@@ -89,24 +93,110 @@
     }
     .contentsTwo .box{
     	width: 380px;height: 420px; 
-    	background: #aaa; 
+    	/*background: #aaa; */
     	position: absolute; top:90px; right: 50px;
     }
     .contentsTwo .box .box1{width: 150px;height: 170px; background: #fff;}
-    .contentsTwo .box .box2{width: 150px;height: 170px; background: #fff;}
+    .contentsTwo .box .box2{width: 150px;height: 170px; background: #f8f9ff;}
     .contentsTwo .box .box3{width: 150px;height: 170px; background: #fff;}
     .contentsTwo .box .box4{width: 150px;height: 170px; background: #fff;}
     .contentsTwo .box ul{}
     .contentsTwo .box li{
     	float: left; margin: 20px; 
     	position: relative;
+    	box-shadow: 0px 0px 5px #aaa;
     }
     .contentsTwo .box li p{
-    	width: 100px; font-size:20px;
+    	width: 100px; font-size:18px;
     	text-align: center;
-    	position: absolute; top: 90px; left: 25px;
+    	position: absolute; top: 100px; left: 25px;
+    }
+    .contentsTwo .box img{
+    	width: 80px; margin: 0 auto;
+    	position: absolute;left: 35px;top: 25px; 
     }
 
+
+	.contentsThree{
+		width: 100%; height: 500px;margin: 0 auto;
+		background: #f8f9ff;
+		
+	}
+	.contentsThree .bg_full{width: 1200px; position: relative; margin: 0 auto;}
+	.contentsThree .contentsTxt{position: absolute;right: 50%;
+        	top: 130px;width: 500px;}
+    .contentsThree .contentsTxt h3{font-size: 30px;margin-bottom: 20px;}
+    .contentsThree .contentsTxt h3 span{color:navy;}
+    .contentsThree .contentsTxt p{margin-bottom: 30px;}
+    .contentsThree .contentsTxt a{
+    		display: block;
+      	 	width: 200px;height: 60px;background: navy;color: white;
+      	 	border-radius: 30px;text-align: center;
+      	 	line-height: 60px;
+    }
+    .contentsThree img{height: 500px; position: absolute; right: 0px}
+
+
+	.contentsFour{width:100%;margin: 0 auto;height: 650px;/*background-color: #f3f5ff;*/}
+	.contentsFour .contentsTxt h3{
+		font-size: 40px;text-align: center;padding-top: 25px; 
+		margin-bottom: 50px; margin-top: 100px;
+	}
+	.contentsFour .contentsTxt h3 span{color:navy;}
+	.contentsFour .contentsTxt .btn{width: 400px;margin: 0 auto; }
+	.contentsFour .contentsTxt a{float: left;margin-bottom: 80px;}
+	.contentsFour .contentsTxt a.btnA{
+    		display: block;
+      	 	width: 200px;height: 60px;background: navy;color: white;
+      	 	border-radius: 30px;text-align: center;
+      	 	line-height: 60px;
+    }
+    .contentsFour .contentsTxt a.btnB{
+    		display: block;
+      	 	width: 200px;height: 60px;background: #f3f5ff;color: #747474;
+      	 	border-radius: 30px;text-align: center;
+      	 	line-height: 60px;
+    }
+    .contentsFour .contentsTxt p{text-align: center;}
+
+    .contentsFive{
+    	width: 1000px;height: 700px; 
+    	margin: 0 auto;/* background: #aaa;*/
+    }
+    .contentsFive .contentsTxt li{
+    	margin: 20px 0px; padding: 0px 80px;
+    	display: block;
+  	 	width: 1000px;height: 120px;background: #fff;color: #747474;
+  	 	border-radius: 60px;
+  	 	line-height: 120px;
+  	 	box-shadow: 0px 0px 5px #ddd;
+  	}
+  	.contentsFive .contentsTxt li:after{content: "";display: block;clear: both;}
+  	.contentsFive .contentsTxt li h4{font-size: 20px; float: left;}
+  	.contentsFive .contentsTxt li p{ font-size: 40px; float: right;}
+
+  	.contentsSix{
+		width: 1200px; height: 500px;margin: 0 auto;
+		position: relative; /*background: #ddd;*/
+	}
+	.contentsSix .contentsTxt{position: absolute;right: 50%;
+        	top: 130px;width: 500px;}
+    .contentsSix .contentsTxt h3{font-size: 30px;margin-bottom: 20px;}
+    .contentsSix .contentsTxt h3 span{color:navy;}
+    .contentsSix .contentsTxt p{margin-bottom: 30px;}
+    .contentsSix .contentsTxt a{
+    		display: block;
+      	 	width: 250px;height: 60px;background: navy;color: white;
+      	 	border-radius: 30px;text-align: center;
+      	 	line-height: 60px;
+    }
+    .contentsSix img{height: 400px; position: absolute; right: 0px; top: 50px;}
+
+    .footer{width: 100%; height: 600px;background: #f3f5ff;}
+    .footer .footerTxt{width: 1200px;margin: 0 auto;padding-top: 150px;}
+
+    .footer .pOne{margin-bottom: 30px;}
+    
 
 
 	</style>
@@ -153,10 +243,12 @@
 	</div>
 
 	<div class="contents">
-		<contents class="contentsTxt">
-			<h3>Save money & <span>money will save you.</span></h3>
-			<p>I will tell you how to become a rich. Close the doors. Be fearful<br>when other are greedy.</p>
-		</contents>
+		<div class="full">
+			<contents class="contentsTxt">
+				<h3>Save money & <span>money will save you.</span></h3>
+				<p>I will tell you how to become a rich. Close the doors. Be fearful<br>when other are greedy.</p>
+			</contents>
+		</div>
 	</div>
 
 	<div class="contentsTwo">
@@ -185,6 +277,69 @@
 					</li>
 				</ul>
 			</div>
+	</div>
+	<div class="contentsThree">
+		<div class="bg_full">
+			<div class="contentsTxt">
+				<h3>A goal <span>without plan</span><br>just a wish for you.</h3>
+				<p>Go beyond thos paycheck with are<br>solution to employees the guidanc<br>they want.</p>
+				<a href="#" class="btnA">Explore Product</a>
+			</div>
+			<img src="images/F.png" alt="">
+		</div>
+	</div>
+	<div class="contentsFour">
+		<div class="contentsTxt">
+			<h3>With Solution, financial benifits have <span>never been easier.</span></h3>
+			<div class="btn clearfix">
+				<a href="#" class="btnA">For Employers</a>
+				<a href="#" class="btnB">For Owners</a>
+			</div>
+			<h3>Frequently Asked <span>Question.</span></h3>
+			<p>Don't be satisfied with stories, how things have gone with<br>
+				others. Unfold your own myth.
+			</p>
+		</div>
+	</div>
+
+	<div class="contentsFive">
+		<div class="contentsTxt">
+			<ul>
+				<li>
+					<h4>1. Dose It work?</h4>
+					<p>→</p>
+				</li>
+				<li>
+					<h4>2. What is the financial plan?</h4>
+					<p>→</p>
+				</li>
+				<li>
+					<h4>3. Can I know how it works?</h4>
+					<p>→</p>
+				</li>
+				<li>
+					<h4>4. How many employers can i expect?</h4>
+					<p>→</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="contentsSix">
+			<div class="contentsTxt">
+				<h3>Financial planning is about <br>more than just <span>good advice<br>or investment</span>retuns.</h3>
+				<p>Go beyond the paycheck with solution to give your<br>employees the guidance they want and need.</p>
+				<a href="#" class="btnA">Request a Demo</a>
+			</div>
+			<img src="images/G.png" alt="">
+	</div>
+	<div class="footer">
+		<div class="footerTxt">
+			<div class="txtL">
+				<img src="images/logo.png" alt="">
+				<p class="pOne">Built for every employee, everywhere.</p>
+				<p>580 oras street<br>lan Itali, DA 354130<br>steam@olution.com</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
