@@ -1,9 +1,42 @@
 @charset "utf-8";
 
 /*header*/
-header#header{
+#header{
 	height: 160px;
 }
+#header .hWrap{
+	margin: 0 auto;
+	background: #0044af;
+}
+#header .hWrap .htop{
+	width: 1200px;height: 40px;
+	margin: 0 auto; position: relative;
+}
+
+#header .htop li{
+	margin-right: 4px;
+	 text-align: center;
+	float: left;
+}
+#header .htop a{
+	display: block;
+	width: 125px; height: 40px;
+	background: #002155;
+	line-height: 40px;
+	color:#fff; font-size: 16px;
+}
+#header .htop .htl a:hover{background: #fff;color:#727272;}
+
+#header .htop .htr{
+	width: 400px;
+}
+#header .htop .htr ul{
+	position: absolute; top: 0;right: 0;
+}
+#header .htop .htr li{float: left; margin-left: 15px;}
+
+
+
 
 /*contents*/
 #contents{
