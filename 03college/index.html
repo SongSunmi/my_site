@@ -9,24 +9,39 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider=$(".slider").bxSlider({
+				auto:true, 
+				controls:false, 
+				pager:false 
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+		});
+
+	</script>
 
 </head>
 <body>
 	<header id="header">
 		<div class="hWrap">
 			<div class="htop">
-				
-					<ul class="clearfix">
+					<ul class="htl clearfix">
 						<li><a href="#">대학교</a></li>
 						<li><a href="#">입학안내</a></li>
 						<li><a href="#">대학원</a></li>
-					</ul>
-				
+					</ul> 
 				<div class="htr">
 					<ul class="clearfix">
 						<li><a href="#">글자크기</a></li>
 						<li><a href="#">
 							<img src="images/minus.jpg" alt="">
+							<img src="images/plus.jpg" alt="">
 						</a></li>
 						<li><a href="#">찾아오시는길</a></li>
 						<li><a href="#">ENGLISH</a></li>
@@ -35,24 +50,97 @@
 				</div>
 			</div>
 		</div>
-			<div class="hmain"></div>
+			<div class="hmain">
+				<div class="logo"><img src="images/logo.png" alt=""></div>
+				<div class="menu">
+					<ul class="clearfix">
+						<li><a href="#">대학소개</a></li>
+						<li><a href="#">학과소개</a></li>
+						<li><a href="#">학사안내</a></li>
+						<li><a href="#">대학생활</a></li>
+						<li><a href="#">학생지원센터</a></li>
+						<li>
+							<div class="btn">
+								<img src="images/icon_menu.jpg" alt="">
+								<img src="images/icon_my.jpg" alt="">
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
 	</header>
 
 	<div id="contents">
-		<section class="title"></section>
+		<section class="title">
+			<div class="tl">
+				<p>함께 나누며 세상을 이끌어</p>
+				<h1>세계로 향하는 한국대학교</h1>
+			</div>
+			<div class="tr">
+				<ul class="clearfix">
+					<li><img src="images/icon01.png" alt=""></li>
+					<li><img src="images/icon02.png" alt=""></li>
+					<li><img src="images/icon03.png" alt=""></li>
+					<li><img src="images/icon04.png" alt=""></li>
+				</ul>
+			</div>
+		</section>
 		<div class="container">
 			<ul class="clearfix">
-				<li>01</li>
-				<li>02</li>
+				<li>
+					<div class="visual">
+						<ul class="slider">
+							<li>  
+								<div class="view"> 
+									<img src="images/img01.jpg" alt="" class="img">
+									<div class="visualTxt">
+										<p><span>한국</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></p>
+										<a href="#" class="btnA">자세히보기 ></a>
+									</div>
+								</div>
+							</li>
+							<li>  
+								<div class="view"> 
+									<img src="images/img01.jpg" alt="" class="img">
+									<div class="visualTxt">
+										<p><span>한국</span>에서<br><span>시작</span>하는<br>새로운 <span>꿈</span></p>
+										<a href="#" class="btnA">자세히보기 ></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="nextBtn">
+							<img src="images/next.png" alt="next">
+						</div>
+						<div class="prevBtn">
+							<img src="images/prev.png" alt="prev">
+						</div>
+					</div>
+					
+				</li>
+				<li>
+					<!-- <img src="images/img02_1.jpg" alt=""> -->
+					<div class="app"> 
+						<img src="images/img02.jpg" alt="">
+						<div class="appTxt">
+							<p class="p1"><span>APP</span>으로<br><span>스마트 도서관</span><br>바로이용하자.</p>
+							<p class="p2">모바일 열람증은 <br>도서관 자료실/도서대출 등에 <br>사용할 수 있습니다.</p>
+							<a href="#" class="btnB">자세히보기 ></a>
+						</div>
+					</div>
+				</li>
 				<li>03</li>
 				<li>04</li>
 				<li>05</li>
-				<li>06</li>
-				<li>07</li>
-				<li>08</li>
+				<li><img src="images/img03_1.jpg" alt=""></li>
+				<li><img src="images/img04.jpg" alt=""></li>
+				<li><img src="images/img05.jpg" alt=""></li>
 			</ul>
 		</div>
 	</div>
+
+
 
 	<footer id="footer"></footer>
 </body>
