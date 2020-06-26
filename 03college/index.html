@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<title>college</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/jquery.bxslilder.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			var mySlider=$(".slider").bxSlider({
+			var mySlider=$(".vslider").bxSlider({
 				auto:true, 
 				controls:false, 
 				pager:false 
@@ -21,6 +21,11 @@
 			});
 			$(".prevBtn").click(function(){
 				mySlider.goToPrevSlide();
+			});
+
+			$(".bslider").bxSlider({
+				auto:true, 
+				controls:false, 
 			});
 		});
 
@@ -51,7 +56,7 @@
 			</div>
 		</div>
 			<div class="hmain">
-				<div class="logo"><img src="images/logo.png" alt=""></div>
+				<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
 				<div class="menu">
 					<ul class="clearfix">
 						<li><a href="#">대학소개</a></li>
@@ -90,7 +95,7 @@
 			<ul class="clearfix">
 				<li>
 					<div class="visual">
-						<ul class="slider">
+						<ul class="vslider">
 							<li>  
 								<div class="view"> 
 									<img src="images/img01.jpg" alt="" class="img">
@@ -122,7 +127,8 @@
 				<li>
 					<!-- <img src="images/img02_1.jpg" alt=""> -->
 					<div class="app"> 
-						<img src="images/img02.jpg" alt="">
+						<img src="images/img02_1.jpg" alt="">
+						<div class="over"></div>
 						<div class="appTxt">
 							<p class="p1"><span>APP</span>으로<br><span>스마트 도서관</span><br>바로이용하자.</p>
 							<p class="p2">모바일 열람증은 <br>도서관 자료실/도서대출 등에 <br>사용할 수 있습니다.</p>
@@ -130,18 +136,159 @@
 						</div>
 					</div>
 				</li>
-				<li>03</li>
-				<li>04</li>
-				<li>05</li>
-				<li><img src="images/img03_1.jpg" alt=""></li>
-				<li><img src="images/img04.jpg" alt=""></li>
-				<li><img src="images/img05.jpg" alt=""></li>
+				<li>
+					<div class="hot">
+						<h1>HOT LINK</h1>
+						<div class="icon">
+							<ul class="clearfix">
+								<li><a href="#">
+									<img src="images/icon_hot01.png" alt="">
+									<p>국제교류<br> 센터</p>
+								</a></li>
+								<li><a href="#">
+									<img src="images/icon_hot02.png" alt="">
+									<p>원격지원<br>시스템</p>
+								</a></li>
+								<li><a href="#">
+									<img src="images/icon_hot03.png" alt="">
+									<p>예산/결산<br>공고</p>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="gong">
+						<h1>공지사항</h1>
+						<div class="line"></div>
+						<div class="gongB">
+							<ul class="clearfix">
+								<li class="left">
+									<p><a href="#">· [공지] 한국대학교 웹진...</a></p>
+									<p><a href="#">· [보도] 우수대학교 선정 수상</a></p>
+									<p><a href="#">· [공지] 대학입시 설명회</a></p>
+									<p><a href="#">· [공지] 2016년 1학기 성적...</a></p>
+								</li>
+								<li class="right">
+									<p><a href="#">2016-06-12</a></p>
+									<p><a href="#">2016-06-17</a></p>
+									<p><a href="#">2016-06-05</a></p>
+									<p><a href="#">2016-05-14</a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="sns">
+						<h1>SNS NEWS</h1>
+						<ul class="m clearfix">
+							<li><a href="#"><img src="images/img_news.jpg" alt=""></a></li>
+							<li>
+								<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관...</p>
+							</li>
+						</ul>
+						<ul class="b clearfix">
+							<li><a href="#">
+								<img src="images/icon_sns01.jpg" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="images/icon_sns02.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="images/icon_sns03.png" alt="">
+							</a></li>
+							<li><a href="#">
+								<img src="images/icon_sns04.png" alt="">
+							</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="tour">
+						<img src="images/img03_1.jpg" alt="">
+						<div class="over">
+							<div class="txt">캠퍼스 투어</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="av">
+						<img src="images/img04.jpg" alt="">
+						<a href="#"><img src="images/play.png" alt="" class="play"></a>
+					</div>
+				</li>
+				<li>
+					<!-- <img src="images/img05.jpg" alt=""> -->
+					<div class="bvisual">
+						<ul class="bslider">
+							<li>  
+								<div class="bview"> 
+									<img src="images/img05.jpg" alt="" class="img">
+									<div class="bvisualTxt">
+										<p>2017년 신·편입생 2차 모집</p>
+										<h1>2017.7.1 ~ 7.10</h1>
+										<a href="#">입학사전예약 ></a>
+									</div>
+								</div>
+							</li>
+							<li>  
+								<div class="bview"> 
+									<img src="images/img05.jpg" alt="" class="img">
+									<div class="bvisualTxt">
+										<p>2017년 신·편입생 2차 모집</p>
+										<h1>2017.7.1 ~ 7.10</h1>
+										<a href="#">입학사전예약 ></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</div>
+		<div class="Bbar">
+			<ul class="clearfix">
+				<li class="L">
+					<p class="p1">학사일정</p>
+					<div class="ym">
+						<a href="#"><img src="images/left.png" class="yml"></a>
+						<p class="p2">2016 07</p>
+						<a href="#"><img src="images/right.png" class="ymr"></a>
+					</div>
+				</li>
+				<li class="R">
+					<p class="p1">2016 - 1학기 성적 열람 및 상담 신청</p>
+					<p class="p2">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
+					<a href="#"><img src="images/up.jpg" class="up"></a>
+					<a href="#"><img src="images/down.jpg" class="down"></a>
+				</li>
+			</ul>
+		</div>
+
 	</div>
 
 
 
-	<footer id="footer"></footer>
+	<footer id="footer">
+		<div class="foot">
+			<div class="footTxt">
+				<ul class="clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국대학교</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용정책</a></li>
+					<li><a href="#">입점/제휴문의 및 광고</a></li>
+					<li><a href="#">이메일 무단수집거부</a></li>
+				</ul>
+				<p class="p1">
+					대표자 : 송선미   서울특별시 구로구 구로로 300 (구로동 6가)   사업자등록번호 : 123-56-7890234<br>
+					통신판매업 신고번호 : 제 1234-서울 구로구 1004호   개인정보관리 책임자 : 김도형   소비자피해보상보험<br>
+					고객센터 : 1234-5678   FAX : 02-1234-5678   HANGUKUNIVERSITY @HANGUK.COM
+				</p>
+				<p class="p2">COPYRIGHT ⓒ HANGUK.ALL RIGHTS RESERVED.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
