@@ -109,8 +109,8 @@ body{font-family: 'Open Sans', sans-serif;}
 .content6 p{font-size: 16px; line-height: 25px;}
 
 #footer{width: 100%;height: 138px;border-top: 2px solid #e7e6ef;}
-.fWrap{width: 1200px;margin: 0 auto;padding-top: 55px;position: relative;}
-.fWrap ul{position: absolute;top: 45px;right: 0;}
+.fWrap{width: 1200px;margin: 0 auto;padding-top: 56px;position: relative;}
+.fWrap ul{position: absolute;top: 47px;right: 0;}
 .fWrap li{
 	float: left;width: 44px;height: 44px;border-radius: 22px;border: 2px solid #1f273c;
 	margin-left: 20px;
