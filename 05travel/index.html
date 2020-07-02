@@ -9,6 +9,27 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider=$(".lslider").bxSlider({
+				auto:true, 
+				pager:false, 
+				controls:false
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+			$(".rslider").bxSlider({
+				auto:true, 
+				pager:false, 
+				controls:false
+			});
+		});
+	</script>
+
 </head>
 <body>
 	<header id="header">
@@ -63,31 +84,129 @@
 						<ul class="remenu">
 							<li><a href="#">
 								<img src="img/img_icon01.png" alt="">
-								<p>공항예약</p>
+								공항예약
 							</a></li>
 							<li><a href="#">
 								<img src="img/img_icon02.png" alt="">
-								<p>호텔예약</p>
+								호텔예약
 							</a></li>
 							<li><a href="#">
 								<img src="img/img_icon03.png" alt="">
-								<p>렌트카</p>
+								렌트카
 							</a></li>
 							<li><a href="#">
 								<img src="img/img_icon04.png" alt="">
-								<p>휴양지</p>
+								휴양지
 							</a></li>
 						</ul>
+
+						<div class="search">
+							<ul class="clearfix">
+								<li>
+									<p>가고싶은 나라를 선택하세요.</p>
+									<div class="box01">
+										<p>선택하세요.</p>
+										<a href="#"><img src="img/img_icon06.jpg" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<p>출발일</p>
+									<div class="box02">
+										<p>2020.07.01</p>
+										<a href="#"><img src="img/img_icon05.png" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<p>도착일</p>
+									<div class="box03">
+										<p>2020.07.01</p>
+										<a href="#"><img src="img/img_icon05.png" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<p>좌석등급</p>
+									<div class="box04">
+										<p>일반석</p>
+										<a href="#"><img src="img/img_icon06.jpg" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<p>성인</p>
+									<div class="box05">
+										<p>1</p>
+										<a href="#"><img src="img/img_icon06.jpg" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<p>아이</p>
+									<div class="box06">
+										<p>2</p>
+										<a href="#"><img src="img/img_icon06.jpg" alt=""></a>
+									</div>
+								</li>
+								<li>
+									<a href="#"><img src="img/img_icon07.png" alt="">
+										<h3>검색하기</h3></a>
+								</li>
+							</ul>
+						</div>
 					</li>
-					<li></li>
-					<li></li>
+					<li>
+						<img src="img/img01.jpg" alt="">
+						<div class="txtbox">
+							<h4 class="txt01">프랑스</h4>
+							<h4 class="txt02">W1,900,000</h4>
+							<a href="#"><h4 class="txt03">></h4></a>
+						</div>
+					</li>
+					<li>
+						<img src="img/img02.jpg" alt="">
+						<div class="txtbox">
+							<h4 class="txt01">일본</h4>
+							<h4 class="txt02">W890,000</h4>
+							<a href="#"><h4 class="txt03">></h4></a>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<div class="ctr">
-				<h1></h1>
-				<div class="line"></div>
-				<p></p>
+				<div class="maintxt">
+					<h1>TRAVEL GO</h1>
+					<div class="line"> </div>
+					<p>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
+				</div>
+
 			</div>
+			<img src="img/img_bg02.png" class="bgimg">
+		</div>
+		<div class="cbottom">
+			<ul class="clearfix">
+				<li>
+					<div class="txtbox">
+						<h4 class="txt01">HILLTON HOTEL (PARIS)</h4>
+						<h4 class="txt02"><span>★★★</span>★★</h4>
+					</div>
+					<ul class="lslider">
+						<li>
+							<div class="view">
+								<img src="img/img03.jpg" alt="">
+							</div>
+						</li>
+						<li>
+							<div class="view">
+								<img src="img/img03.jpg" alt="">
+							</div>
+						</li>
+					</ul>
+					<div class="nextBtn">
+						<img src="img/next.jpg" alt="next">
+					</div>
+					<div class="prevBtn">
+						<img src="img/prew.jpg" alt="prev">
+					</div>
+				</li>
+			</ul>
+			
 		</div>
 	</div>
 
