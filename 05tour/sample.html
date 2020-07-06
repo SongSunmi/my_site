@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>검색</title>
+	<style>
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+		html,body{height: 100%;}
+		body{
+			background-image: url(img/img_bg01.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			-webkit-background-size: cover;
+			background-size: cover;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		.wrap{
+			position: absolute; _background: #aff;
+			width: 400px;height: 50px;
+			left: 50%;top: 50%;transform: translate(-50%,-50%);
+			z-index: 1;
+		}
+		.searchInp{
+			width: 400px;height: 50px;border: 3px solid #000;
+			border-radius: 25px;text-indent: 80px;font-size: 16px; font-weight: bold;
+			box-shadow: 10px 10px 10px  #aaa;position: relative;z-index: 1;
+		}
+		.searchBtn{
+			width: 20px;height: 20px;
+			background-image: url(img/search.jpg);
+			text-indent: -9999px; border: 0 none;
+			position: absolute;right: 20px;top: 15px;z-index: 1;
+		}
+		.searchTitle{
+			display: block;
+			width: 60px;height: 20px;
+			background-image: url(img/searchtext.jpg);
+			text-indent: -9999px;
+			position: absolute;top: 15px;left: 15px;z-index: 2;
+		}
+		.img01{
+			position: absolute;right: -100px;top: -250px;
+			animation-name:bal01;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+		}
+		/*@keyframes bal01{
+			0%{right: -100px;top: -250px;}
+			100%{right: -100px;top: -220px;}
+		}*/
+		@keyframes bal01{
+			0%{transform: translateY(-30px);}		
+			100%{transform: translateY(0px);}		
+		}
+
+		.img00{
+			position: absolute;left: 0;bottom: 0;
+			animation-name: air01;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			z-index: 0;
+		}
+		@keyframes air01{
+			0%{left: 0;bottom: 0;}
+			100%{left: 1000px;bottom: 1000px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="img/content2.png" alt="" class="img01">
+		<form action="#" method="get">
+			<label for="searchTxt" class="searchTitle">searchTitle</label>
+			<input type="text" id="searchTxt" name="search" placeholder="검색어를 입력하세요." class="searchInp">
+			<button type="submit" class="searchBtn">search</button>
+		</form>
+	</div>
+	<img src="img/reallyAir.png" alt="" class="img00">
+</body>
+</html>
