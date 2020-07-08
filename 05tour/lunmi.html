@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>LUNMI TRAVEL</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/lunmi.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider=$(".slider").bxSlider({
+				auto:true,
+				pager:false,
+				controls:false
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+			var mySlider1=$(".slider1").bxSlider({
+				auto:true,
+				pager:false,
+				controls:false
+			});
+			$(".nextBtn1").click(function(){
+				mySlider1.goToNextSlide();
+			});
+			$(".prevBtn1").click(function(){
+				mySlider1.goToPrevSlide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<header id="header">
+		<div class="hWrap">
+			<div class="hTop">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+					<h1>TRAVEL</h1>
+					<p>하 이 미 디 어</p>
+				</div>
+				<div class="hSearch">
+					<form action="#" method="get">
+						<label for="searchTxt" class="searchTitle">searchTitle</label>
+						<input type="text" id="searchTxt" name="search" placeholder="검색어를 입력하세오." class="searchInp">
+						<button type="submit" class="searchBtn">search</button>
+					</form>
+				</div>
+			</div>
+			<div class="hMenu"></div>
+		</div>
+	</header>
+
+	<div id="content">
+		<div class="cWrap">
+			<div class="cTop">
+				<ul class="clearfix">
+					<li>
+						<ul class="clearfix">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</li>
+					<li>4</li>
+				</ul>
+			</div>
+
+			<div class="cBottom">
+				<ul class="clearfix">
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li> 
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="fWrap"></div>
+	</footer>
+	
+</body>
+</html>

@@ -155,8 +155,8 @@ body{
 		100%{left: 2000px;bottom: 1000px;}
 	}
 
-	.ctop{width: 980px;height: 611px;margin: 0 auto;position: relative;padding-top: 55px;margin-bottom: 16px;}
-	.ctl{width: 482px;position: absolute;left: 0;z-index: 2;}
+	.ctop{width: 980px;height: 611px;margin: 0 auto;position: relative;padding-top: 55px;margin-bottom: 16px;z-index: 2;}
+	.ctl{width: 482px;position: absolute;left: 0;}
 	.ctl>ul>li{float: left;}
 	.ctl>ul>li:nth-child(1){
 		width: 482px;height: 300px;background: #fff;position: relative;
@@ -267,11 +267,11 @@ body{
 
 
 	.cbottom{
-		width: 980px;margin: 0 auto;_background: #000;padding-bottom: 16px;
+		width: 980px;margin: 0 auto;_background: #000;padding-bottom: 16px;position: relative;z-index: 2;
 	}
 	.cbottom>ul>li{overflow: hidden;
 		float: left;width: 233px;height: 240px;background: #eee;
-		position: relative;margin-right: 16px;margin-bottom: 16px;z-index: 2;
+		position: relative;margin-right: 16px;margin-bottom: 16px;
 	}
 	.cbottom>ul>li:nth-child(4),
 	.cbottom>ul>li:nth-child(8){margin-right: 0;}
