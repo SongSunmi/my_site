@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>TRAVEL</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider=$(".slider").bxSlider({
+				auto:true, 
+				pager:false,
+				controls:false
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+			var mySlider1=$(".slider1").bxSlider({
+				auto:true, 
+				pager:false,
+				controls:false
+			});
+			$(".nextBtn1").click(function(){
+				mySlider1.goToNextSlide();
+			});
+			$(".prevBtn1").click(function(){
+				mySlider1.goToPrevSlide();
+			});
+			
+		});
+	</script>
+
+</head>
+<body>
+	<header id="header">
+		<div class="hWrap">
+			<div class="htop">
+				<ul class="clearfix">
+					<li><a href="#">
+						<img src="img/logo.png" alt="">
+					</a></li>
+					<li><a href="#">
+						<h1>TRAVEL</h1>
+						<p>하 이 미 디 어</p>
+					</a></li>
+				</ul>
+				<div class="searchWrap">
+					<form action="#" method="get">
+						<label for="searchTxt" class="searchTitle">searchTitle</label>
+						<input type="text" id="searchTxt" name="search" placeholder="검색어를 입력하세요." class="searchInp">
+						<button type="submit" class="searchBtn">search</button>
+					</form>
+				</div>
+				<div class="htr">
+					<ul class="clearfix">
+						<li>
+							<h1><span>+82</span> 02 1234 5678</h1>
+						</li>
+						<li>
+							<ul class="sns clearfix">
+								<li><a href="#"><img src="img/img_sns01.png" alt=""></a></li>
+								<li><a href="#"><img src="img/img_sns02.png" alt=""></a></li>
+								<li><a href="#"><img src="img/img_sns03.png" alt=""></a></li>
+								<li><a href="#"><img src="img/img_sns04.png" alt=""></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hmenu">
+			<ul class="clearfix">
+				<li><a href="#">여행도시</a></li>
+				<li><a href="#">호텔예약</a></li>
+				<li><a href="#">렌트카</a></li>
+				<li><a href="#">
+					여행TIP
+					<img src="img/img_tip.png" alt="">
+				</a></li>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">커뮤니티</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div id="contents">
+		
+	</div>
+
+	<footer id="footer">
+		<div class="fWrap">
+			<ul class="clearfix">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">광고 및 제휴문의</a></li>
+			</ul>
+			<p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 : 송선미 대표번호 : 02-1234-5678<br>COPYRIGHTⓒ2020 HIMEDIA TOUR. ALL RIGHTS RESERVED.</p>
+		</div>
+	</footer>
+
+</body>
+</html>
