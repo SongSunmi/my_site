@@ -144,15 +144,11 @@ cursor: pointer; mix-blend-mode: multiply;
 #contents .container .hot img{margin-bottom: 10px;}
 #contents .container .hot p{color:#fff; font-size: 13px;text-align: center;}
 
-#contents .container .gong{margin: 0 auto; position: relative;}
-#contents .container .gong h1{font-size:20px;color: #fff;position: absolute;top: 35px;left: 25px;}
-#contents .container .gong .line{width: 260px;height: 2px; background: #fff;position: absolute;top: 80px;left: 50%;margin-left: -130px;}
-#contents .container .gong .gongB{position: absolute;top: 95px;left: 50%;margin-left: -130px;}
-#contents .container .gong li{float: left;background: #1651b7;}
-#contents .container .gong p{font-size: 13px; line-height: 25px;}
-#contents .container .gong a{color: #fff}
-#contents .container .gong .left{width: 180px;height: 100px;}
-#contents .container .gong .right{width: 80px;height: 100px;text-align: right;}
+#contents .container .notice{padding: 30px;}
+#contents .container .notice h4{font-size:20px;line-height: 40px;color: #fff; border-bottom: 1px solid #fff;margin-bottom: 15px;}
+#contents .container .notice p.noticeTxt{font-size: 13px; line-height: 25px;position: relative;}
+#contents .container .notice a{color: #fff;margin-bottom: 8px;}
+#contents .container .notice p.noticeTxt span{position: absolute;right: 0;top: 0;}
 
 #contents .container .sns{margin: 0;position: relative;}
 #contents .container .sns h1{font-size:20px;color: #222;position: absolute;top: 35px;left: 25px;}
