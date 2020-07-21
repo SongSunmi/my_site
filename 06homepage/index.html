@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>도그메이트</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+	$(document).ready(function(){
+			var mySlider=$(".slider").bxSlider({
+				auto:true, 
+				controls:false, 
+				// pager:false 
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<header id="header">
+		<div class="hWrap clearfix">
+			<h1>
+				<a href="#">
+					<img class="logo" src="img/logo01.png" alt="">
+					<img class="logo2" src="img/logo02.png" alt="">
+				</a>
+			</h1>
+			<div class="lang">
+				<ul class="clearfix">
+					<li>
+						<a href="#">KOR</a>
+					</li>
+					<li>
+						<a href="#">ENG</a>
+					</li>
+				</ul>
+			</div> <!-- lang -->
+			<div class="nav">
+				<ul class="clearfix">
+					<li>
+						<a href="#">방문펫시터 소개</a>
+					</li>
+					<li>
+						<a href="#">자주 묻는 질문</a>
+					</li>
+					<li>
+						<a href="#">펫시터 지원</a>
+					</li>
+					<li>
+						<a href="#">블로그</a>
+					</li>
+				</ul>
+			</div> <!-- nav -->
+		</div> <!-- hWrap -->
+		<div class="visual">
+			<ul class="slider">
+				<li>  
+					<div class="view"> 
+						<img src="img/img_main05.jpg" alt="" class="img">
+						<div class="visualTxt">
+							<h2>전문 펫시터가<br>돌봐드려요</h2>
+							<p>나와 내 반려동물을 위한 돌봄서비스</p>
+						</div>
+					</div>
+				</li>
+				<li>  
+					<div class="view"> 
+						<img src="img/img_main05.jpg" alt="" class="img">
+						<div class="visualTxt">
+							<h2>전문 펫시터가<br>돌봐드려요</h2>
+							<p>나와 내 반려동물을 위한 돌봄서비스</p>
+						</div>
+					</div>
+				</li>
+				<li>  
+					<div class="view"> 
+						<img src="img/img_main05.jpg" alt="" class="img">
+						<div class="visualTxt">
+							<h2>전문 펫시터가<br>돌봐드려요</h2>
+							<p>나와 내 반려동물을 위한 돌봄서비스</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="nextBtn">
+				<img src="img/next.png" alt="next">
+			</div>
+			<div class="prevBtn">
+				<img src="img/prev.png" alt="prev">
+			</div>
+		</div> <!-- visual -->
+	</header>
+	<div id="content">
+		<div class="cWrap">
+			<div class="container">
+				<ul class="clearfix">
+					<li> <!-- 1 -->
+						<a href="#">
+							<h3><i class="fab fa-app-store"></i></h3>
+						</a>
+					</li>
+					<li> <!-- 2 -->
+						<a href="#">
+							<h3><i class="far fa-play-circle"></i></h3>
+						</a>
+					</li>
+					<li> <!-- 3 -->
+						<a href="#">
+							3
+						</a>
+					</li>
+					<li> <!-- 4 -->
+						<a href="#">
+							4
+						</a>
+					</li>
+					<li> <!-- 5 -->
+						<a href="#">
+							<h3><i class="fas fa-camera-retro"></i></h3>
+						</a>
+					</li>
+					<li> <!-- 6 -->
+						<a href="#">
+							6
+						</a>
+					</li>
+					<li> <!-- 7 -->
+						<a href="#">
+							7
+						</a>
+					</li>
+					<li> <!-- 8 -->
+						<a href="#">
+							8
+						</a>
+					</li>
+					<li> <!-- 9 -->
+						<a href="#">
+							9
+						</a>
+					</li>
+					<li> <!-- 10 -->
+						<a href="#">
+							<h3><i class="fas fa-cart-arrow-down"></i></h3>
+						</a>
+					</li>
+					<li> <!-- 11 -->
+						<a href="#">
+							11
+						</a>
+					</li>
+					<li> <!-- 12 -->
+						<a href="#">
+							12
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- cWrap -->
+	</div> <!-- content -->
+
+	
+</body>
+</html>
