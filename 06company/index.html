@@ -37,6 +37,32 @@
 			});
 		});
 	</script>
+
+	<script>
+		$(document).ready(function(){
+			$(".box2,.box3,.box4").hide();
+			$(".oneWrap .Txt ul>li").eq(0).click(function(){
+				// $(".box1").show();
+				// $(".box2").hide();
+				// $(".box3").hide();
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box1").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(1).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box2").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(2).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box3").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(3).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box4").fadeIn();
+			});
+		})
+	</script>
+
 </head>
 <body>
 	<header id="header">
@@ -164,7 +190,7 @@
 					</li>
 					<li> <!-- 5 -->
 						<img src="img/img_dog.jpg" alt="">
-						<div class="box"></div>
+						<div class="box"><a href="#">자세히 보기</a></div>
 						<a href="#">
 							<h3><i class="fas fa-camera-retro"></i></h3>
 							<p>실시간 액션캠 촬영</p>						
@@ -172,25 +198,31 @@
 
 					</li>
 					<li> <!-- 6 -->
+						<img src="img/img_cat.png" class="catImg">
+						<div class="box"><a href="#">자세히 보기</a></div>
 						<a href="#">
-							<img src="img/img_cat.png" class="catImg">
 							<img src="img/img_catsitter.png" class="catsitter">
 							<p>고양이 전문 펫시터가 직접 방문하여<br>집사의 일을 대신 해드립니다.</p>
 						</a>
 					</li>
 					<li> <!-- 7 -->
+						<img src="img/img_v05.png" class="dogImg">
 						<a href="#">
-							7
+							<p>돌봄 프로세스</p>
+							<h3>안심할 수 있는<br>돌봄 프로세스</h3>
 						</a>
 					</li>
 					<li> <!-- 8 -->
+						<img src="img/img_v02.png" class="sitterImg">
 						<a href="#">
-							8
+							<p>맞춤 돌봄</p>
 						</a>
 					</li>
 					<li> <!-- 9 -->
+						<img src="img/img_v01.png" class="eventImg">
 						<a href="#">
-							9
+							<p>이벤트</p>
+							<h3>앱 전용 쿠폰 및 회원전용 쇼핑몰<br>혜택을 누려보세요!</h3>
 						</a>
 					</li>
 					<li> <!-- 10 -->
@@ -200,18 +232,53 @@
 						</a>
 					</li>
 					<li> <!-- 11 -->
+						<img src="img/img_ai05.png" class="aiImg">
 						<a href="#">
-							11
+							<p>믿고 맡길 수 있는 펫시터</p>
 						</a>
 					</li>
 					<li> <!-- 12 -->
+						<img src="img/img_v06.jpg" class="socialImg">
+						<img src="img/img_dogs.png" class="dogsImg">
 						<a href="#">
-							12
+							<p>돌봄 내용이 담긴 일지</p>
+							<h3>안심할 수 있는<br>돌봄 프로세스</h3>
 						</a>
 					</li>
 				</ul>
-			</div>
+			</div> <!-- container -->
+			<div class="contentOne">
+				<div class="oneWrap clearfix">
+					<div class="Txt">
+						<h3>우리 강아지 전담 매니저,</h3>
+						<img src="img/img_petsitter.png" class="petLogo">
+						<ul class="clearfix">
+							<li>안전한 산책</li>
+							<li>배식 및 환경정리</li>
+							<li>다양한 실내놀이</li>
+							<li>환경 맞춤 돌봄</li>
+						</ul>
+						<div class="wrap">
+							<div class="box1">
+								<p>목줄과 하네스가 연결된 이중산책줄을 통해 안전하게 산책합니다.</p>
+								<p>*목줄은 비상시에만 활용되며 평소 산책시에는 목에 무리가 가지 않도록 설계되었습니다.</p>
+							</div>
+							<div class="box2">
+								<p>요청사항에 맞는 식사를 급여하며<br>배변 치우기 등 간단한 환경정리를 진행합니다.</p>
+							</div>
+							<div class="box3">
+								<p>기상 상황에 의해 산책이 어려울 땐<br>체계적인 프로그램에 맞춰 실내놀이를 합니다.</p>
+							</div>
+							<div class="box4">
+								<p>노령견 또는 환견의 경우, 요청사항에 따라<br>일대일 맞춤 돌봄을 진행합니다.</p>
+							</div>
+						</div>
+					</div> <!-- Txt -->
+				</div> <!-- oneWrap -->
+			</div> <!-- contentOne -->
+
 		</div> <!-- cWrap -->
+
 	</div> <!-- content -->
 
 	
