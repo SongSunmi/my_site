@@ -4,6 +4,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>마크업</title>
+	<!-- meta:vp -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/all.css">
@@ -14,10 +16,22 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
+
+			$(".toggleMenu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+				}
+				else{
+					$(this).removeClass("change");
+				}
+			});
 		});
+		
 	</script>
 </head>
 <body>
+
 	<header id="header" class="main">
 		<div id="hTop" class="clearfix">
 			<h1><a href="#">LOGO</a></h1>
@@ -31,6 +45,11 @@
 					<li><a href="#">인재채용</a></li>
 				</ul>
 			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="sliderWrap">
 			<ul class="slider">
@@ -65,6 +84,20 @@
 			</ul>
 		</div>
 	</header>
+
+	<!-- <script>
+		var tMenu = document.getElementsByClassName("toggleMenu")[0];
+			var mMenu = document.getElementById("mainMenu");
+			tMenu.onclick = function(){
+				var toggle = tMenu.getAttribute("class");
+				if(toggle == "toggleMenu"){
+					tMenu.setAttribute("class","toggleMenu change");
+				}
+				else{
+					tMenu.setAttribute("class","toggleMenu");
+				}
+			}
+	</script> -->
 	
 </body>
 </html>
