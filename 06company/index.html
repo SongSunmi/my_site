@@ -61,6 +61,14 @@
 				$(".box4").fadeIn();
 			});
 		})
+		$(document).ready(function(){
+			$(".oneWrap .Txt ul>li").click(function(){
+				var i = $(this).index();
+				$(".img_v>img").hide().eq(i).fadeIn();
+				$(".img_f>img").hide().eq(i).fadeIn();
+			});
+		});
+
 	</script>
 
 </head>
@@ -273,7 +281,25 @@
 								<p>노령견 또는 환견의 경우, 요청사항에 따라<br>일대일 맞춤 돌봄을 진행합니다.</p>
 							</div>
 						</div>
+						<div class="button"><a href="#">자세히 보기</a></div>
 					</div> <!-- Txt -->
+				
+					<div class="phone">
+						<div class="img_v">
+							<img src="img/img_v03.png" class="phoneIn" style="display:block;">
+							<img src="img/img_v02.png" class="phoneIn">
+							<img src="img/img_v03.png" class="phoneIn">
+							<img src="img/img_v02.png" class="phoneIn">
+						</div>
+						<img src="img/img_phone.png" class="phoneImg">
+						<div class="img_f">
+							<img src="img/img_ai07.png" class="phoneOut" style="display:block;">
+							<img src="img/img_ai03.png" class="phoneOut">
+							<img src="img/img_ai07.png" class="phoneOut">
+							<img src="img/img_ai03.png" class="phoneOut">
+						</div>
+
+					</div> <!-- phone -->
 				</div> <!-- oneWrap -->
 			</div> <!-- contentOne -->
 

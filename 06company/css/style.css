@@ -167,17 +167,30 @@ body{
 	position: absolute;left: 30px;top: 70px;
 }
 .container>ul>li:nth-child(12) h3{font-size: 35px;padding: 30px;color:#fff;position: absolute;}
-.contentOne{width: 100%;height: 900px;background: #00c8b7;margin-bottom: 60px;}
+.contentOne{width: 100%;height: 760px;background: #00c8b7;margin-bottom: 60px;}
 .oneWrap{width: 1260px;margin: 0 auto;}
 .oneWrap .Txt{float: left;padding-top: 120px;width: 630px;}
-.oneWrap .Txt h3{font-size: 46px;color:#fff;margin-bottom: 50px;}
-.oneWrap .Txt .petLogo{width: 320px;margin-bottom: 150px;}
+.oneWrap .Txt h3{font-size: 50px;color:#fff;margin-bottom: 10px;font-weight: 400;}
+.oneWrap .Txt .petLogo{width: 320px;margin-bottom: 100px;}
 .oneWrap .Txt ul>li{
-	float: left;_background:skyblue;margin-right:47px;
-	text-align: center;line-height:40px;color: #fff;font-size: 18px;
+	float: left;_background:skyblue;margin-right:47px;position: relative;
+	text-align: center;line-height:40px;color: #fff;font-size: 18px;display: block;cursor: pointer;
 }
 .oneWrap .Txt ul>li:last-child{margin-right: 0;}
-.oneWrap .Txt ul{margin-bottom: 70px;}
+.oneWrap .Txt ul>li:hover{font-weight: 700;}
+.oneWrap .Txt ul>li:hover:after{
+	content:"";width: 100%;height: 3px;background: #fff;
+	position: absolute;left: 50%;top: 40px;transform: translateX(-50%);
+}
+.oneWrap .Txt ul{margin-bottom: 40px;}
 .oneWrap .Txt .box1,.box2,.box3,.box4{width: 600px;}
+.oneWrap .Txt .wrap{margin-bottom: 50px;}
 .oneWrap .Txt .wrap p{font-size: 16px;color: #fff;line-height: 30px;}
 .oneWrap .Txt .wrap .box1>p:last-child{font-size: 14px;}
+.oneWrap .Txt .button{width: 200px;height: 60px;border-radius: 30px;background: #fff;padding: 15px 45px;}
+.oneWrap .Txt .button>a{color: #00c8b7;font-size: 20px;}
+
+.oneWrap .phone{width: 630px;float: right;padding-top: 70px;position: relative;}
+.oneWrap .phone .phoneImg{position: absolute;width: 300px;left: 100px;}
+.oneWrap .phone .phoneIn{position: absolute;width: 260px;left: 120px;top: 140px;display: none;}
+.oneWrap .phone .phoneOut{position: absolute;width: 120px;left: 330px;top: 500px;display: none;}
