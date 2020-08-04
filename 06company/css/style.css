@@ -30,7 +30,7 @@ body{
 }
 .bx-wrapper .bx-pager{
     position: absolute;
-    bottom: 400px;
+    bottom: 450px;
     width: 100%;
 }
 
@@ -52,11 +52,11 @@ body{
 .lang>ul>li>a{display: block;text-align: center;line-height: 50px;color: #fff;}
 .lang>ul>li>a:hover{background: #00c8b7;}
 
-#content{width: 100%;}
+#content{width: 100%;height: 3760px;}
 
 
 .cWrap{_background: orange;
-	width: 100%;_height: 2000px;margin: 0 auto;
+	width: 100%;_height: 3760px;margin: 0 auto;
 	top: 570px;position: relative;z-index: 1;
 }
 .container{width: 1260px;height: 1260px;margin: 0 auto;_background: #eee;margin-bottom: 60px;}
@@ -194,3 +194,49 @@ body{
 .oneWrap .phone .phoneImg{position: absolute;width: 300px;left: 100px;}
 .oneWrap .phone .phoneIn{position: absolute;width: 260px;left: 120px;top: 140px;display: none;}
 .oneWrap .phone .phoneOut{position: absolute;width: 120px;left: 330px;top: 500px;display: none;}
+
+.contentTwo{width: 100%;height: 550px;_background: #eee;_margin-bottom: 60px;}
+.twoWrap{width: 1260px;height: 550px;margin: 0 auto;border-bottom: 3px solid #aaa;}
+.twoWrap>h2{font-size: 35px;color:#444;text-align: center;margin-bottom: 80px;}
+.twoWrap>ul>li{float: left;padding: 0 150px;}
+.twoWrap>ul>li:first-child{padding-left: 8px}
+.twoWrap>ul>li:last-child{padding-right: 8px;}
+.twoWrap>ul>li>a{display: block;text-align: center;}
+.twoWrap>ul>li>a p{font-size: 20px;color: #444;}
+.twoWrap>ul>li>a span{font-weight: bold;}
+.twoWrap .aiImg{height: 235px;margin-bottom: 20px;}
+
+.contentThree{width: 100%;height: 500px;_background: #eee;border-bottom: 2px solid #bbb;_margin-bottom: 60px;}
+.threeWrap{width: 1260px;height: 500px;margin: 0 auto;}
+.threeWrap>h2{text-align: center;color: #444;font-size: 35px;padding-top: 160px;margin-bottom: 60px;font-weight: normal;}
+.threeWrap>ul{width: 530px;margin: 0 auto;margin-bottom: 30px;}
+.threeWrap>ul>li{float: left;width: 250px;height: 64px;border-radius: 32px;position: relative;}
+.threeWrap>ul>li:first-child{border: 1px solid #00c8b7;margin-right: 30px;}
+.threeWrap>ul>li:last-child{border: 1px solid #fff100;}
+.threeWrap .callImg{width: 36px;background: #00c8b7;border-radius: 18px;padding: 6px;}
+.threeWrap .kakaoImg{width: 36px;background: #fff100;border-radius: 18px;padding: 6px;}
+.threeWrap>ul>li img{float: left;position: absolute;left: 30px;top: 14px;}
+.threeWrap>ul>li:last-child img{left: 50px;}
+.threeWrap>ul>li p{float: right;color: #444;font-size: 24px;line-height: 64px;position: absolute;right: 30px;}
+.threeWrap>ul>li:last-child p{right: 50px;}
+.threeWrap>p{font-size: 20px; color: #444;text-align: center;}
+
+#footer{width: 100%;height: 400px;_background: #eee;}
+.fWrap{width: 1260px;margin: 0 auto;padding-top: 100px;}
+.fWrap>ul>li{float: left;}
+.fWrap>p,
+.fWrap>ul>li>a{color: #777;line-height: 35px;}
+.fWrap ul.ulOne>li{padding: 0 5px;border-right: 1px solid #777;}
+.fWrap ul.ulOne>li:nth-child(5),
+.fWrap ul.ulOne>li:last-child{border-right: 0 none;}
+.fWrap>p{margin-bottom: 30px;}
+.fWrap ul.ulTwo{width: 750px;float: left;}
+.fWrap ul.ulTwo>li{padding: 0 5px;border-right: 1px solid #555;}
+.fWrap ul.ulTwo>li:nth-child(5),
+.fWrap ul.ulTwo>li:last-child{border-right: 0 none;}
+.fWrap ul.ulTwo>li>a{color: #555;}
+.fWrap>ul.ulThree{float: right;}
+.fWrap>ul.ulThree>li{margin-left: 20px;}
+.fWrap>ul.ulThree img{width: 68px;}
+
+
