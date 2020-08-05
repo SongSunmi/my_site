@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>블로그</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+	$(document).ready(function(){
+			var mySlider=$(".slider").bxSlider({
+				auto:true, 
+				controls:false, 
+				// pager:false 
+			});
+			$(".nextBtn").click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+			var myCSlider=$(".cSlider").bxSlider({
+				auto:true, 
+				controls:false, 
+				pager:false 
+			});
+			$(".cNextBtn").click(function(){
+				myCSlider.goToNextSlide();
+			});
+			$(".cPrevBtn").click(function(){
+				myCSlider.goToPrevSlide();
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$(".box2,.box3,.box4").hide();
+			$(".oneWrap .Txt ul>li").eq(0).click(function(){
+				// $(".box1").show();
+				// $(".box2").hide();
+				// $(".box3").hide();
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box1").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(1).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box2").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(2).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box3").fadeIn();
+			});
+			$(".oneWrap .Txt ul>li").eq(3).click(function(){
+				$(".box1,.box2,.box3,.box4").hide();
+				$(".box4").fadeIn();
+			});
+		})
+		$(document).ready(function(){
+			$(".oneWrap .Txt ul>li").click(function(){
+				var i = $(this).index();
+				$(".img_v>img").hide().eq(i).fadeIn();
+				$(".img_f>img").hide().eq(i).fadeIn();
+			});
+
+			// sub01
+			$(".scWrap>.s01_menu>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".scWrap>.s01_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
+				$(".sboxWrap>div").hide().eq(liNum).show();
+			});
+
+			// sub02
+			$(".scWrap>.s02_menu>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".scWrap>.s02_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
+				$(".sboxWrap>div").hide().eq(liNum).show();
+			});
+
+			// sub03
+			$(".scWrap>.s03_menu>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".scWrap>.s03_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
+				$(".sboxWrap>div").hide().eq(liNum).show();
+			});
+
+			// sub04
+			$(".scWrap>.s04_menu>ul>li").click(function(){
+				var liNum = $(this).index();
+				$(".scWrap>.s04_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
+				$(".sboxWrap>div").hide().eq(liNum).show();
+			});
+		});
+
+	</script>
+
+</head>
+<body>
+	<header id="header">
+		<div class="hWrap clearfix">
+			<h1>
+				<a href="index.html">
+					<img class="logo" src="img/logo01.png" alt="">
+					<img class="logo2" src="img/logo02.png" alt="">
+				</a>
+			</h1>
+			<div class="lang">
+				<ul class="clearfix">
+					<li>
+						<a href="#">KOR</a>
+					</li>
+					<li>
+						<a href="#">ENG</a>
+					</li>
+				</ul>
+			</div> <!-- lang -->
+			<div class="nav">
+				<ul class="clearfix">
+					<li>
+						<a href="sub01.html">방문펫시터 소개</a>
+					</li>
+					<li>
+						<a href="sub02.html">자주 묻는 질문</a>
+					</li>
+					<li>
+						<a href="sub03.html">펫시터 지원</a>
+					</li>
+					<li>
+						<a href="#">블로그</a>
+					</li>
+				</ul>
+			</div> <!-- nav -->
+		</div> <!-- hWrap -->
+		<div class="visual s04Visual">
+			<h3>1등 펫시터 예약 사이트, 도그메이트 블로그</h3>
+		</div> <!-- visual -->
+	</header>
+	<div id="content" class="s04Content">
+		<div class="cWrap scWrap">
+			<div class="s04_menu">
+				<ul class="clearfix">
+					<li><a href="#">이용 후기</a></li>
+					<li><a href="#">소식</a></li>
+					<li><a href="#">반려동물 상식</a></li>
+				</ul>
+			</div>
+			<div class="sboxWrap">
+				<div class="s04_cOne">
+					<div class="subNav">
+							<a href="#"><i class="fas fa-home"></i></a>
+							  >  
+							<a href="#">블로그</a>
+							  >  
+							<a href="#">이용 후기</a>
+					</div>
+					<h2>이용 후기</h2>
+					<img src="img/img_sub04_1.png" alt="">
+				</div>
+				<div class="s04_cTwo">
+					<div class="subNav">
+							<a href="#"><i class="fas fa-home"></i></a>
+							  >  
+							<a href="#">블로그</a>
+							  >  
+							<a href="#">소식</a>
+					</div>
+					<h2>소식</h2>
+					<img src="img/img_sub04_2.png" alt="">
+				</div>
+				<div class="s04_cThree">
+					<div class="subNav">
+							<a href="#"><i class="fas fa-home"></i></a>
+							  >  
+							<a href="#">블로그</a>
+							  >  
+							<a href="#">반려동물 상식</a>
+					</div>
+					<h2>반려동물 상식</h2>
+					<img src="img/img_sub04_3.png" alt="">
+				</div>
+			</div>
+		</div> <!-- cWrap -->
+
+	</div> <!-- content -->
+	<footer id="footer">
+		<div class="fWrap clearfix">
+			<ul class="clearfix ulOne">
+				<li><a href="#">주식회사 도그메이트</a></li>
+				<li><a href="#">대표 : 송선미</a></li>
+				<li><a href="#">개인정보책임관리자 : 이하영</a></li>
+				<li><a href="#">사업자등록번호 : 123-44-56789</a></li>
+				<li><a href="#">통신판매업신고번호 : 제 2020-서울구로-1234호</a></li>
+				<li><a href="#">서울 구로구 구로대로 123, 12층(구로동, 구로빌딩)</a></li>
+				<li><a href="#">고객센터 1234-4567</a></li>
+			</ul>
+			<p>ⓒ 2020 Dogmate. All Rights Reserved</p>
+			<ul class="clearfix ulTwo">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보 취급방침</a></li>
+				<li><a href="#">안전보상제도</a></li>
+				<li><a href="#">위치기반서비스 이용약관</a></li>
+				<li><a href="#">멍냥퀴즈 서비스 이용약관</a></li>
+				<li><a href="#">제휴 문의</a></li>
+				<li><a href="#">펫시터메뉴</a></li>
+			</ul>
+			<ul class="clearfix ulThree">
+				<li><a href="#"><img src="img/img_sns01.png" alt=""></a></li>
+				<li><a href="#"><img src="img/img_sns02.png" alt=""></a></li>
+				<li><a href="#"><img src="img/img_sns03.png" alt=""></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+</body>
+</html>

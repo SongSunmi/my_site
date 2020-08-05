@@ -206,7 +206,7 @@ body{
 .twoWrap>ul>li>a span{font-weight: bold;}
 .twoWrap .aiImg{height: 235px;margin-bottom: 20px;}
 
-.contentThree{width: 100%;height: 500px;_background: #eee;border-bottom: 2px solid #bbb;_margin-bottom: 60px;}
+.contentThree{width: 100%;height: 500px;_background: #eee;_margin-bottom: 60px;}
 .threeWrap{width: 1260px;height: 500px;margin: 0 auto;}
 .threeWrap>h2{text-align: center;color: #444;font-size: 35px;padding-top: 160px;margin-bottom: 60px;font-weight: normal;}
 .threeWrap>ul{width: 530px;margin: 0 auto;margin-bottom: 30px;}
@@ -221,11 +221,11 @@ body{
 .threeWrap>ul>li:last-child p{right: 50px;}
 .threeWrap>p{font-size: 20px; color: #444;text-align: center;}
 
-#footer{width: 100%;height: 400px;_background: #eee;}
+#footer{width: 100%;height: 400px;_background: #eee;border-top: 2px solid #bbb;}
 .fWrap{width: 1260px;margin: 0 auto;padding-top: 100px;}
-.fWrap>ul>li{float: left;}
+.fWrap>ul>li{float: left;margin-bottom: 10px;}
 .fWrap>p,
-.fWrap>ul>li>a{color: #777;line-height: 35px;}
+.fWrap>ul>li>a{color: #777;_line-height: 35px;}
 .fWrap ul.ulOne>li{padding: 0 5px;border-right: 1px solid #777;}
 .fWrap ul.ulOne>li:nth-child(5),
 .fWrap ul.ulOne>li:last-child{border-right: 0 none;}
@@ -239,4 +239,89 @@ body{
 .fWrap>ul.ulThree>li{margin-left: 20px;}
 .fWrap>ul.ulThree img{width: 68px;}
 
+
+
+
+/*sub*/
+.scWrap{width: 1260px;position: absolute;top: 614px;left: 50%;transform: translateX(-50%);}
+.scWrap>.s01_menu,
+.scWrap>.s03_menu,
+.scWrap>.s04_menu{width: 660px;margin: 0 auto; margin-bottom: 15px;}
+.scWrap>.s02_menu{width: 1100px;margin: 0 auto; margin-bottom: 15px;}
+.scWrap ul>li{float: left;width: 220px;height: 66px;border: 1px solid #aaa;background: #fff;}
+.scWrap ul>li:nth-child(1),
+.scWrap ul>li:nth-child(2){border-right: 0 none;}
+.scWrap ul>li>a{display: block;font-size: 20px;color: #444;text-align: center;line-height: 66px; }
+.scWrap ul>li:hover a{background: #ddd;color: #2faca1;font-weight: bold;}
+.subNav{color: #00c8b7;margin-bottom: 20px;}
+.subNav>a{font-size: 16px;color: #00c8b7;}
+.subNav>a:nth-child(2){color: #444;}
+.subNav>a:nth-child(3){font-weight: bold;}
+.sboxWrap h2{font-size: 30px; color: #00c8b7;text-align: center;line-height: 80px; position: relative;margin-bottom: 50px;}
+.sboxWrap h2:before{
+	content:"";width: 70px;height: 3px;background: #00c8b7;position: absolute;
+	left: 50%;transform: translateX(-50%);
+}
+.sboxWrap>div{width: 1260px;position: absolute;display: none;}
+.sboxWrap>div:first-child{display: block;}
+.active{background: #ddd;color: #2faca1 !important;font-weight: bold;}
+
+
+/*sub01*/
+.s01Visual{
+	width: 100%;height: 680px;
+	background: url(../img/main.png);
+	position: absolute;z-index: 0;
+}
+.s01Visual>p,
+.s01Visual>h3{position: absolute;left: 430px;}
+.s01Visual>p{top: 260px;font-size: 30px;color: #444;font-weight: bold;}
+.s01Visual>h3{top: 310px;font-size: 45px;color: #444;}
+.s01Content{height: 1600px !important;}
+.s01_cOne>img{width: 1260px;padding-top: 50px;}
+.s01_cTwo>div{width: 1260px;margin: 0 auto;}
+.s01_cTwo>div>img{float: left;width: 420px;}
+.s01_cTwo>div>img:nth-child(1){width: 1260px;}
+.s01_cThree>img{width: 1200px;margin: 0 auto;}
+
+/*sub02*/
+.s02Visual{
+	width: 100%;height: 680px;
+	background: url(../img/img_main02.png) #dc8296 no-repeat center;
+	position: absolute;z-index: 0;
+}
+.s02Visual>h3{position: absolute;left: 50%;top: 140px;transform: translateX(-50%); font-size: 38px;color: #fff;}
+.s02Content{height: 1350px !important;}
+.s02_cOne>img,
+.s02_cTwo>img,
+.s02_cThree>img,
+.s02_cFour>img,
+.s02_cFive>img{position: absolute;left: 50%;transform: translateX(-50%);}
+
+
+/*sub03*/
+.s03Visual{
+	width: 100%;height: 680px;
+	background: url(../img/img_sub.jpg) #3a4628 no-repeat center bottom;
+	position: absolute;z-index: 0;
+}
+.s03Visual>h3{position: absolute;left: 500px;top: 100px; font-size: 42px;color: #fff;}
+.s03Content{height: 1900px !important;}
+.s03_cOne>img,
+.s03_cTwo>img,
+.s03_cThree>img{position: absolute;left: 50%;transform: translateX(-50%);}
+
+
+
+/*sub04*/
+.s04Visual{
+	width: 100%;height: 680px;
+	background: url(../img/img_main.png) #476c4b no-repeat center bottom;
+	position: absolute;z-index: 0;
+}
+.s04Visual>h3{position: absolute;left: 50%;top: 120px;transform: translateX(-50%); font-size: 38px;color: #fff;}
+.s04Content{height: 2100px !important;}
+.s04_cOne>img,
+.s04_cTwo>img,
+.s04_cThree>img{position: absolute;left: 50%;transform: translateX(-50%);}
 
