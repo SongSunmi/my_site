@@ -17,9 +17,9 @@
 		$(function(){
 			$("#fullpage").fullpage({
 				anchors:["a1st","a2st","a3st","a4st"],
-				menu:"#topMenu",
-				// navigation: true,
-				// slidesNavigation: true,
+				menu:"#tMenu",
+				navigation: true,
+				slidesNavigation: true,
 				afterLoad:function(anchorslink,index){
 					console.log(index);
 					if(index == 1){
@@ -31,22 +31,20 @@
 					if(index == 2){
 						$("#onViewTwo").addClass("move");
 						$("#navTop li a").addClass("bl");
-					}
-					else{
+					}else{
 						$("#onViewTwo").removeClass("move");
 						$("#navTop li a").removeClass("bl");
 					}
-					
+
 					if(index == 3){
 						$("#onViewThree").addClass("move");
-					}
-					else{
+					}else{
 						$("#onViewThree").removeClass("move");
 					}
+
 					// if(index == 4){
 					// 	$("#navTop li a").addClass("bl");
-					// }
-					// else{
+					// }else{
 					// 	$("#navTop li a").removeClass("bl");
 					// }
 				}
@@ -77,10 +75,37 @@
 		</div>
 		<div class="section" id="page2" data-anchor="a2st">
 			<div class="main" id="onViewTwo">
-				<h3>지키다.잇다.</h3>
-				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
-				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
-				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+				<h3>나누다.공감하다</h3>
+				<div class="vtWrap">
+					<ul class="clearfix">
+						<li>
+							<img src="images/pro01.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>2019 연차보고서 발행</h4>
+								<p>2001년부터 계속된 아름지기의 긴 여정을 변함없이 따뜻한 마음으로<br>
+								함께 걸어주신 아름지기 가족 여러분께 진심으로 감사드립니다.</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/pro03.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>도무스 코리아, 아름지기 전시 소개</h4>
+								<p>도무스 코리아가 아름지기 기획전시의 생생한 이미지를<br>
+								독자들에게 전달합니다.</p>
+							</div>
+						</li>
+						<li>
+							<img src="images/pro06.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>구글 아트앤컬쳐X아름지기 전시</h4>
+								<p>아름지기 전시는 구글 아트앤컬쳐를 통해 여러분께 더욱 다가갑니다.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="page3" data-anchor="a3st">
