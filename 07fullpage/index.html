@@ -4,8 +4,102 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>FULLPAGE</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(function(){
+			$("#fullpage").fullpage({
+				anchors:["a1st","a2st","a3st","a4st"],
+				menu:"#topMenu",
+				// navigation: true,
+				// slidesNavigation: true,
+				afterLoad:function(anchorslink,index){
+					console.log(index);
+					if(index == 1){
+						$("#onViewOne").addClass("move");
+					}else{
+						$("#onViewOne").removeClass("move");
+					}
+
+					if(index == 2){
+						$("#onViewTwo").addClass("move");
+						$("#navTop li a").addClass("bl");
+					}
+					else{
+						$("#onViewTwo").removeClass("move");
+						$("#navTop li a").removeClass("bl");
+					}
+					
+					if(index == 3){
+						$("#onViewThree").addClass("move");
+					}
+					else{
+						$("#onViewThree").removeClass("move");
+					}
+					// if(index == 4){
+					// 	$("#navTop li a").addClass("bl");
+					// }
+					// else{
+					// 	$("#navTop li a").removeClass("bl");
+					// }
+				}
+			});
+		});
+	</script>
 </head>
 <body>
+	<header id="header">
+		<nav id="navTop" class="clearfix">
+			<h2 class="tLogo"><a href="#"><img src="images/logoH.png" alt=""></a></h2>
+			<ul id="tMenu" class="clearfix">
+				<li data-menuanchor="a1st"><a href="#a1st">재단소개</a></li>
+				<li data-menuanchor="a2st"><a href="#a2st">프로그램</a></li>
+				<li data-menuanchor="a3st"><a href="#a3st">아트숍</a></li>
+				<li data-menuanchor="a4st"><a href="#a4st">아름지기 소식</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="fullpage">
+		<div class="section" id="page1" data-anchor="a1st">
+			<div class="main" id="onViewOne">
+				<h3>지키다.잇다.</h3>
+				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
+				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
+				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+			</div>
+		</div>
+		<div class="section" id="page2" data-anchor="a2st">
+			<div class="main" id="onViewTwo">
+				<h3>지키다.잇다.</h3>
+				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
+				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
+				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+			</div>
+		</div>
+		<div class="section" id="page3" data-anchor="a3st">
+			<div class="main" id="onViewThree">
+				<h3>지키다.잇다.</h3>
+				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
+				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
+				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+			</div>
+		</div>
+		<div class="section" id="page4" data-anchor="a4st">
+			<div class="main" id="onViewFour">
+				<h3>지키다.잇다.</h3>
+				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
+				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
+				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>
