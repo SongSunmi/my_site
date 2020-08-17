@@ -35,11 +35,7 @@
 			$(".cPrevBtn").click(function(){
 				myCSlider.goToPrevSlide();
 			});
-		});
-	</script>
 
-	<script>
-		$(document).ready(function(){
 			$(".box2,.box3,.box4").hide();
 			$(".oneWrap .Txt ul>li").eq(0).click(function(){
 				// $(".box1").show();
@@ -60,12 +56,20 @@
 				$(".box1,.box2,.box3,.box4").hide();
 				$(".box4").fadeIn();
 			});
-		})
-		$(document).ready(function(){
+
 			$(".oneWrap .Txt ul>li").click(function(){
 				var i = $(this).index();
 				$(".img_v>img").hide().eq(i).fadeIn();
 				$(".img_f>img").hide().eq(i).fadeIn();
+			});
+
+			$(".lang li").click(function(){
+				var i = $(this).index();
+				$(".lang li").removeClass().eq(i).addClass("act");
+			});
+			$(".oneWrap li").click(function(){
+				var i = $(this).index();
+				$(".oneWrap li").removeClass().eq(i).addClass("act");
 			});
 		});
 
@@ -83,7 +87,7 @@
 			</h1>
 			<div class="lang">
 				<ul class="clearfix">
-					<li>
+					<li class="act">
 						<a href="#">KOR</a>
 					</li>
 					<li>
@@ -152,7 +156,7 @@
 				<ul class="clearfix">
 					<li> <!-- 1 -->
 						<img src="img/img_app.gif" class="appImg">
-						<a href="#">
+						<a href="https://www.dogmate.co.kr" target="blank">
 							<h3><i class="fab fa-app-store"></i></h3>
 							<p>도그메이트 앱 설치</p>
 						</a>
@@ -198,7 +202,7 @@
 					</li>
 					<li> <!-- 5 -->
 						<img src="img/img_dog.jpg" alt="">
-						<div class="box"><a href="#">자세히 보기</a></div>
+						<div class="box"><a href="sub01.html">자세히 보기</a></div>
 						<a href="#">
 							<h3><i class="fas fa-camera-retro"></i></h3>
 							<p>실시간 액션캠 촬영</p>						
@@ -207,7 +211,7 @@
 					</li>
 					<li> <!-- 6 -->
 						<img src="img/img_cat.png" class="catImg">
-						<div class="box"><a href="#">자세히 보기</a></div>
+						<div class="box"><a href="sub01.html">자세히 보기</a></div>
 						<a href="#">
 							<img src="img/img_catsitter.png" class="catsitter">
 							<p>고양이 전문 펫시터가 직접 방문하여<br>집사의 일을 대신 해드립니다.</p>
@@ -215,40 +219,40 @@
 					</li>
 					<li> <!-- 7 -->
 						<img src="img/img_v05.png" class="dogImg">
-						<a href="#">
+						<a href="sub01.html">
 							<p>돌봄 프로세스</p>
 							<h3>안심할 수 있는<br>돌봄 프로세스</h3>
 						</a>
 					</li>
 					<li> <!-- 8 -->
 						<img src="img/img_v02.png" class="sitterImg">
-						<a href="#">
+						<a href="sub01.html">
 							<p>맞춤 돌봄</p>
 						</a>
 					</li>
 					<li> <!-- 9 -->
 						<img src="img/img_v01.png" class="eventImg">
-						<a href="#">
+						<a href="sub04.html">
 							<p>이벤트</p>
 							<h3>앱 전용 쿠폰 및 회원전용 쇼핑몰<br>혜택을 누려보세요!</h3>
 						</a>
 					</li>
 					<li> <!-- 10 -->
-						<a href="#">
+						<a href="https://www.dogmate.co.kr" target="blank">
 							<h3><i class="fas fa-cart-arrow-down"></i></h3>
 							<p>용품샵</p>
 						</a>
 					</li>
 					<li> <!-- 11 -->
 						<img src="img/img_ai05.png" class="aiImg">
-						<a href="#">
+						<a href="sub01.html">
 							<p>믿고 맡길 수 있는 펫시터</p>
 						</a>
 					</li>
 					<li> <!-- 12 -->
 						<img src="img/img_v06.jpg" class="socialImg">
 						<img src="img/img_dogs.png" class="dogsImg">
-						<a href="#">
+						<a href="sub01.html">
 							<p>돌봄 내용이 담긴 일지</p>
 							<h3>안심할 수 있는<br>돌봄 프로세스</h3>
 						</a>
@@ -261,7 +265,7 @@
 						<h3>우리 강아지 전담 매니저,</h3>
 						<img src="img/img_petsitter.png" class="petLogo">
 						<ul class="clearfix">
-							<li>안전한 산책</li>
+							<li class="act">안전한 산책</li>
 							<li>배식 및 환경정리</li>
 							<li>다양한 실내놀이</li>
 							<li>환경 맞춤 돌봄</li>
@@ -281,7 +285,7 @@
 								<p>노령견 또는 환견의 경우, 요청사항에 따라<br>일대일 맞춤 돌봄을 진행합니다.</p>
 							</div>
 						</div>
-						<div class="button"><a href="#">자세히 보기</a></div>
+						<div class="button"><a href="sub01.html">자세히 보기</a></div>
 					</div> <!-- Txt -->
 				
 					<div class="phone">
@@ -306,15 +310,15 @@
 				<div class="twoWrap">
 					<h2>믿고 맡길 수 있는 펫시터</h2>
 					<ul class="clearfix">
-						<li><a href="#">
+						<li><a href="sub03.html">
 							<img src="img/img_ai04.png" alt="" class="aiImg">
 							<p><span>전문 교육 수료</span>한<br>펫시터</p>
 						</a></li>
-						<li><a href="#">
+						<li><a href="sub03.html">
 							<img src="img/img_ai07.png" alt="" class="aiImg">
 							<p>반려동물 키운 경험<br><span>5년 이상</span></p>
 						</a></li>
-						<li><a href="#">
+						<li><a href="sub03.html">
 							<img src="img/img_ai05.png" alt="" class="aiImg">
 							<p><span>12단계</span>의 까다로운<br>지원자 선별</p>
 						</a></li>
@@ -325,11 +329,11 @@
 				<div class="threeWrap">
 					<h2>더 궁금하신 사항이 있다면, 고객센터로 문의 주세요!</h2>
 					<ul class="clearfix">
-						<li><a href="#" class="clearfix">
+						<li><a href="sub02.html" class="clearfix">
 								<img src="img/call.png" class="callImg">
 								<p>1234-5678</p>
 						</a></li>
-						<li><a href="#" class="clearfix">
+						<li><a href="sub02.html" class="clearfix">
 								<img src="img/kakao.png" class="kakaoImg">
 								<p>1:1 상담</p>
 						</a></li>

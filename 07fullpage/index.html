@@ -30,10 +30,8 @@
 
 					if(index == 2){
 						$("#onViewTwo").addClass("move");
-						$("#navTop li a").addClass("bl");
 					}else{
 						$("#onViewTwo").removeClass("move");
-						$("#navTop li a").removeClass("bl");
 					}
 
 					if(index == 3){
@@ -42,12 +40,27 @@
 						$("#onViewThree").removeClass("move");
 					}
 
-					// if(index == 4){
-					// 	$("#navTop li a").addClass("bl");
-					// }else{
-					// 	$("#navTop li a").removeClass("bl");
-					// }
+					if( $(".section").eq(index-1).filter("div.active").length == 1 ){ 
+	                  if(index%2 == 0){
+	                     $("#tMenu li a").addClass("bl");
+	                  }else{
+	                     $("#navTop li a").removeClass("bl");
+	                  }
+	                }	
 				}
+			});
+			
+			$("#onViewTwo .btnPager>div").click(function(){
+				var i = $(this).index();
+				$("#onViewTwo .btnPager>div").removeClass().eq(i).addClass("act");
+				var num = 430*i*-1;
+				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
+			});
+
+			$("#onViewThree .btnPage>div").click(function(){
+				var i = $(this).index();
+				var num = 900*i*-1;
+				$("#onViewThree .right .artWrap").stop().animate({left:num},600);
 			});
 		});
 	</script>
@@ -75,45 +88,201 @@
 		</div>
 		<div class="section" id="page2" data-anchor="a2st">
 			<div class="main" id="onViewTwo">
-				<h3>나누다.공감하다</h3>
+				<h3>함께 배우다.성장하다.</h3>
 				<div class="vtWrap">
 					<ul class="clearfix">
 						<li>
-							<img src="images/pro01.jpg" alt="">
+							<img src="images/program01.jpg" alt="">
 							<div class="multi"> </div>
 							<div class="tBox">
-								<h4>2019 연차보고서 발행</h4>
-								<p>2001년부터 계속된 아름지기의 긴 여정을 변함없이 따뜻한 마음으로<br>
-								함께 걸어주신 아름지기 가족 여러분께 진심으로 감사드립니다.</p>
+								<h4>아름지기 한식 쿠킹 클래스</h4>
+								<p>풍성한 계절, 가을을 맞이해 아름지기 한식 쿠킹 클래스가 열립니다.<br>
+								아름지기 여러분의 많은 관심과 참여를 부탁드립니다.</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
 							</div>
 						</li>
 						<li>
-							<img src="images/pro03.jpg" alt="">
+							<img src="images/program02.jpg" alt="">
 							<div class="multi"> </div>
 							<div class="tBox">
-								<h4>도무스 코리아, 아름지기 전시 소개</h4>
-								<p>도무스 코리아가 아름지기 기획전시의 생생한 이미지를<br>
-								독자들에게 전달합니다.</p>
+								<h4>기획전시 연계 강연 프로그램</h4>
+								<p>[참가신청]기획전시 연계 강연 프록그램을 통해 우리 문화에 대한<br>
+								깊이를 더해보세요.</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
 							</div>
 						</li>
 						<li>
-							<img src="images/pro06.jpg" alt="">
+							<img src="images/program03.jpg" alt="">
 							<div class="multi"> </div>
 							<div class="tBox">
-								<h4>구글 아트앤컬쳐X아름지기 전시</h4>
-								<p>아름지기 전시는 구글 아트앤컬쳐를 통해 여러분께 더욱 다가갑니다.</p>
+								<h4>궁궐 자원봉사 활동 신청</h4>
+								<p>궁궐을 반짝반짝, 아름지기의 힘을 모아주세요.</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/program04.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>아름지기 홍건익 가옥 기획전시</h4>
+								<p><역관의 방 - 조선의 중인 세계를 누비다>展<br>
+								2017년 9월 26일부터 2018년 3월 30일까지 진행될 예정입니다.</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/program05.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>2016 헤렌과 함께하는 아름지기 기금 마련 비자</h4>
+								<p>4월 28일 오전 10시 30분에서 오후 4시에 걸쳐 호림아트센터<br>
+								JNB갤러리에서 진행될 예정입니다.</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/program06.jpg" alt="">
+							<div class="multi"> </div>
+							<div class="tBox">
+								<h4>가락家樂-가즌회상 한바탕</h4>
+								<p>2011년 가락-안국동 별궁, 가즌회상 한바탕</p>
+								<div class="wrap">
+									<div class="bar1"> </div>
+									<div class="bar2"> </div>
+								</div>
 							</div>
 						</li>
 					</ul>
 				</div>
+				<div class="btnPager clearfix">
+					<div class="pg01 act"> </div>
+					<div class="pg02"> </div>
+					<div class="pg03"> </div>
+					<div class="pg04"> </div>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="page3" data-anchor="a3st">
-			<div class="main" id="onViewThree">
-				<h3>지키다.잇다.</h3>
-				<p class="txt1">우리의 문화가 우리다울 수 있도록</p>
-				<p class="txt2">아름지기는 자연·문화유산을 보존, 정비하고 새로운 문화공간으로 가꾸는 등<br>
-				전통의 창조적 계승을 통해 내일의 문화유산을 창조합니다</p>
+			<div class="main clearfix" id="onViewThree">
+				<div class="left">
+					<h3>나누다.공감하다.</h3>
+					<p class="txt1">품격있는 문화의 아름다움을 널리 알립니다.</p>
+					<div class="snsIcon clearfix">
+						<a href="#"><img src="images/facebook.png" alt=""></a>
+						<a href="#"><img src="images/instar.png" alt=""></a>
+						<a href="#"><img src="images/youtube.png" alt=""></a>
+					</div>
+				</div>
+				<div class="right">
+					
+					<div class="artSlide">
+						<div class="artWrap clearfix">
+							<ul class="clearfix L">
+								<li>
+									<img src="images/art01.jpg" alt="">
+									<div class="tBox">
+										<h4>한지 테이블매트</h4>
+										<p>전통 한지의 아름다운 색감과 자연스러운<br>
+										질감을 살린 테이블매트입니다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/art02.jpg" alt="">
+									<div class="tBox">
+										<h4>도트무늬 가방, 주머니</h4>
+										<p>붓 끝에서 전해지는 멋과 생동감을 도트에 담다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/art03.jpg" alt="">
+									<div class="tBox">
+										<h4>백자 전접시</h4>
+										<p>조선 백자의 정결함과 양감을 그대로 살려내다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="clearfix R">
+								<li>
+									<img src="images/art04.jpg" alt="">
+									<div class="tBox">
+										<h4>한지 테이블매트</h4>
+										<p>전통 한지의 아름다운 색감과 자연스러운<br>
+										질감을 살린 테이블매트입니다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/art05.jpg" alt="">
+									<div class="tBox">
+										<h4>도트무늬 가방, 주머니</h4>
+										<p>붓 끝에서 전해지는 멋과 생동감을 도트에 담다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<img src="images/art06.jpg" alt="">
+									<div class="tBox">
+										<h4>백자 전접시</h4>
+										<p>조선 백자의 정결함과 양감을 그대로 살려내다.</p>
+										<div class="btn">
+											<div class="fffBox"></div>
+											<div class="bar1"></div>
+											<div class="bar2"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btnPage clearfix">
+						<div class="prev">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+						</div>
+						<div class="next">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="page4" data-anchor="a4st">

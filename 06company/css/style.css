@@ -51,7 +51,7 @@ body{
 	.lang>ul>li{float: left;width: 50px;height: 50px;border: 1px solid #00c8b7;}
 	.lang>ul>li:first-child{border-right: none;}
 	.lang>ul>li>a{display: block;text-align: center;line-height: 50px;color: #fff;}
-	.lang>ul>li>a:hover{background: #00c8b7;}
+	.lang>ul>li.act{background: #00c8b7;}
 
 	#content{width: 100%;height: 3760px;}
 
@@ -178,8 +178,8 @@ body{
 		text-align: center;line-height:40px;color: #fff;font-size: 18px;display: block;cursor: pointer;
 	}
 	.oneWrap .Txt ul>li:last-child{margin-right: 0;}
-	.oneWrap .Txt ul>li:hover{font-weight: 700;}
-	.oneWrap .Txt ul>li:hover:after{
+	.oneWrap .Txt ul>li.act{font-weight: 700;}
+	.oneWrap .Txt ul>li.act:after{
 		content:"";width: 100%;height: 3px;background: #fff;
 		position: absolute;left: 50%;top: 40px;transform: translateX(-50%);
 	}

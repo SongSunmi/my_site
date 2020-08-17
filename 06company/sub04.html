@@ -35,11 +35,7 @@
 			$(".cPrevBtn").click(function(){
 				myCSlider.goToPrevSlide();
 			});
-		});
-	</script>
 
-	<script>
-		$(document).ready(function(){
 			$(".box2,.box3,.box4").hide();
 			$(".oneWrap .Txt ul>li").eq(0).click(function(){
 				// $(".box1").show();
@@ -60,33 +56,11 @@
 				$(".box1,.box2,.box3,.box4").hide();
 				$(".box4").fadeIn();
 			});
-		})
-		$(document).ready(function(){
+
 			$(".oneWrap .Txt ul>li").click(function(){
 				var i = $(this).index();
 				$(".img_v>img").hide().eq(i).fadeIn();
 				$(".img_f>img").hide().eq(i).fadeIn();
-			});
-
-			// sub01
-			$(".scWrap>.s01_menu>ul>li").click(function(){
-				var liNum = $(this).index();
-				$(".scWrap>.s01_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
-				$(".sboxWrap>div").hide().eq(liNum).show();
-			});
-
-			// sub02
-			$(".scWrap>.s02_menu>ul>li").click(function(){
-				var liNum = $(this).index();
-				$(".scWrap>.s02_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
-				$(".sboxWrap>div").hide().eq(liNum).show();
-			});
-
-			// sub03
-			$(".scWrap>.s03_menu>ul>li").click(function(){
-				var liNum = $(this).index();
-				$(".scWrap>.s03_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
-				$(".sboxWrap>div").hide().eq(liNum).show();
 			});
 
 			// sub04
@@ -94,6 +68,7 @@
 				var liNum = $(this).index();
 				$(".scWrap>.s04_menu>ul>li>a").removeClass().eq(liNum).addClass("active");
 				$(".sboxWrap>div").hide().eq(liNum).show();
+				return false;
 			});
 		});
 
