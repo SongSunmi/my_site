@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>FULLPAGE</title>
 	<link rel="stylesheet" href="css/reset.css">
@@ -64,9 +65,28 @@
 				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
 			});
 
+			$("#onViewTwo .tabPager>div").click(function(){
+				var i = $(this).index();
+				$("#onViewTwo .tabPager>div").removeClass().eq(i).addClass("act");
+				var num = 620*i*-1;
+				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
+			});
+
+			$("#onViewTwo .mobPager>div").click(function(){
+				var i = $(this).index();
+				$("#onViewTwo .mobPager>div").removeClass().eq(i).addClass("act");
+				var num = 520*i*-1;
+				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
+			});
+
 			$("#onViewThree .btnPage>div").click(function(){
 				var i = $(this).index();
 				var num = 900*i*-1;
+				$("#onViewThree .right .artWrap").stop().animate({left:num},600);
+			});
+			$("#onViewThree .tabPage>div").click(function(){
+				var i = $(this).index();
+				var num = 667*i*-1;
 				$("#onViewThree .right .artWrap").stop().animate({left:num},600);
 			});
 
@@ -81,6 +101,8 @@
 					$("#tMenu").stop().animate({right:"-300"},300);
 				}
 			});
+
+			
 		});
 	</script>
 </head>
@@ -170,7 +192,7 @@
 							<img src="images/program05.jpg" alt="">
 							<div class="multi"> </div>
 							<div class="tBox">
-								<h4>2016 헤렌과 함께하는 아름지기 기금 마련 비자</h4>
+								<h4>2016 헤렌, 아름지기 기금 마련 비자</h4>
 								<p>4월 28일 오전 10시 30분에서 오후 4시에 걸쳐 호림아트센터<br>
 								JNB갤러리에서 진행될 예정입니다.</p>
 								<a href="#" class="wrap">
@@ -198,6 +220,16 @@
 					<div class="pg02"> </div>
 					<div class="pg03"> </div>
 					<div class="pg04"> </div>
+				</div>
+				<div class="tabPager clearfix">
+					<div class="pg01 act"> </div>
+					<div class="pg02"> </div>
+					<div class="pg03"> </div>
+				</div>
+				<div class="mobPager clearfix">
+					<div class="pg01 act"> </div>
+					<div class="pg02"> </div>
+					<div class="pg03"> </div>
 				</div>
 			</div>
 		</div>
@@ -297,6 +329,16 @@
 						</div>
 					</div>
 					<div class="btnPage clearfix">
+						<div class="prev">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+						</div>
+						<div class="next">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+						</div>
+					</div>
+					<div class="tabPage clearfix">
 						<div class="prev">
 							<div class="bar1"></div>
 							<div class="bar2"></div>
