@@ -40,22 +40,32 @@ body{
 	}
 	#onViewOne{top: 30%;transition: 0.6s;opacity: 0;}
 	#onViewOne.move{top: 40%;opacity: 1;}
-	#onViewOne h3{font-size: 60px;margin-bottom: 55px;position: relative;font-weight: 600;}
+	#onViewOne h3{font-size: 58px;margin-bottom: 55px;position: relative;font-weight: 600;}
 	#onViewOne h3:after{
 		content:"";width: 200px;height: 5px;background: #ecb800;
 		display: block;position: absolute;top: 100px;left: 50%;transform: translateX(-50%);
 	}
 	#onViewOne .txt1{font-size: 30px;margin-bottom: 8px;}
 	#onViewOne .txt2{font-size: 18px;line-height: 30px;}
-
-	#onViewTwo{top: 0;transition: 0.6s;opacity: 0;}
+	.scroll{
+			position: absolute;left: 50%;transform: translateX(-50%);bottom: 20px;
+			animation: xScroll 0.8s infinite alternate;
+		}
+		@keyframes xScroll{
+			from{bottom: 20px;}
+			to{bottom: 40px;}
+		}
+	#onViewTwo{width: 100%;height: 100%;top: 0;transition: 0.6s;opacity: 0;}
 	#onViewTwo.move{top: 10%;opacity: 1;}
-	#onViewTwo h3{font-size: 50px;margin-bottom: 100px;position: relative;font-weight: 600;color: #444;}
+	#onViewTwo h3{font-size: 48px;margin-bottom: 100px;position: relative;font-weight: 600;color: #444;}
 	#onViewTwo h3:after{
 		content:"";width: 200px;height: 5px;background: #ecb800;
 		display: block;position: absolute;top: 100px;left: 50%;transform: translateX(-50%);
 	}
-	#onViewTwo .vtWrap{width: 1260px;height: 600px;margin: 0 auto;_background: #eee;overflow: hidden;position: relative;}
+	#onViewTwo .vtWrap{
+		width: 1260px;height: 600px;margin: 0 auto;_background: #eee;
+		overflow: hidden;position: relative;margin-bottom: 30px;
+	}
 	#onViewTwo .vtWrap ul{width: 2550px;position: absolute;left: 0;}
 	#onViewTwo .vtWrap li{
 		/*background-image: url(../images/pro01.jpg);*/
@@ -92,7 +102,7 @@ body{
 		transform: translate(-50%,-50%);
 	}
 	#onViewTwo .vtWrap li .tBox .wrap:hover{transform: translate(-50%,-50%) rotate(90deg);}
-	#onViewTwo .btnPager{width: 300px;position: absolute;bottom: -50px;left: 50%;transform: translateX(-50%);}
+	#onViewTwo .btnPager{width: 300px;position: absolute;_bottom: -50px;left: 50%;transform: translateX(-50%);}
 	#onViewTwo .btnPager>div{
 		float: left;width: 30px;height: 30px;background: #aaa;transition: 0.1s;
 		cursor: pointer;margin: 0 10px;
@@ -229,7 +239,6 @@ body{
 	#onViewFour .newsWrap .nImg:hover img{transform:  scale(1.1);transition: 0.3s;}
 	.tabPager{display: none;}
 	.tabPage{display: none;}
-	.mobPager{display: none;}
 }
 	
 
@@ -481,7 +490,7 @@ body{
 	#onViewFour .newsWrap .nImg img{width: 100%;position: absolute;top: -10px;transition: 0.3s;}
 	#onViewFour .newsWrap li:nth-child(3) .nImg img{top: 0;}
 	#onViewFour .newsWrap .nImg:hover img{transform:  scale(1.1);transition: 0.3s;}
-	.mobPager{display: none;}
+	.scroll{display: none;}
 }
 
 	
@@ -709,5 +718,5 @@ body{
 	#onViewFour .newsWrap .nImg img{width: 100%;position: absolute;transition: 0.3s;}
 	#onViewFour .newsWrap li:nth-child(3) img{height: 100%;}
 	#onViewFour .newsWrap .nImg:hover img{transform:  scale(1.1);transition: 0.3s;}
-	
+	.scroll{display: none;}
 }
