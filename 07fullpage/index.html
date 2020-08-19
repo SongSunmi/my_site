@@ -72,12 +72,12 @@
 				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
 			});
 
-			$("#onViewTwo .mobPager>div").click(function(){
-				var i = $(this).index();
-				$("#onViewTwo .mobPager>div").removeClass().eq(i).addClass("act");
-				var num = 520*i*-1;
-				$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
-			});
+			// $("#onViewTwo .mobPager>div").click(function(){
+			// 	var i = $(this).index();
+			// 	$("#onViewTwo .mobPager>div").removeClass().eq(i).addClass("act");
+			// 	var num = 520*i*-1;
+			// 	$("#onViewTwo .vtWrap ul").stop().animate({left:num},300);
+			// });
 
 			$("#onViewThree .btnPage>div").click(function(){
 				var i = $(this).index();
@@ -222,11 +222,6 @@
 					<div class="pg04"> </div>
 				</div>
 				<div class="tabPager clearfix">
-					<div class="pg01 act"> </div>
-					<div class="pg02"> </div>
-					<div class="pg03"> </div>
-				</div>
-				<div class="mobPager clearfix">
 					<div class="pg01 act"> </div>
 					<div class="pg02"> </div>
 					<div class="pg03"> </div>
