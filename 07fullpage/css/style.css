@@ -825,7 +825,7 @@ body{
 		transform: scale(1);transition: 0.3s;
 	}
 	#onViewFour .nPtxt a{display: inline-block;margin-left: 30px;font-size: 12px;color: #aaa;}
-	#onViewFour .newsWrap{width: 90%;height: 50%;margin: 0 auto;margin-bottom: 20px;}
+	#onViewFour .newsWrap{width: 90%;height: 55%;margin: 0 auto;margin-bottom: 20px;}
 	#onViewFour .newsWrap ul{width: 100%;height: 100%;}
 	#onViewFour .newsWrap li{margin: 0 auto;
 		width: 100%;height: 33%;background-color: rgba(220,220,220,0.5);border-bottom: 1px solid #aaa;
