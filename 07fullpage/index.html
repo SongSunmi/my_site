@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
-	<title>FULLPAGE</title>
+	<title>아름지기</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/all.css">
@@ -102,6 +102,19 @@
 				}
 			});
 
+			$("#onViewFour").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+
+			$("a.nImg").click(function(){
+				var aHref = $(this).attr("href");
+				$("#glayLayer").show();
+				$("#overLayer").show().html("<img src='"+aHref+"'>");
+				return false;
+			});
+			
+        	$("#glayLayer,#overLayer").click(function(){
+            	$("#glayLayer").hide();
+           		$("#overLayer").hide();
+         	});
 			
 		});
 	</script>
@@ -384,7 +397,7 @@
 								<p>서울의 유명한 건축물을 일반인에게 공개하여 건축이 가지는 의미에 대해 생각하고 공유하는<br>
 								'오픈하우스 서울'에서 올해도 아름지기 사옥을 찾아주었습니다.</p>
 							</div>
-							<a href="#" class="nImg"><img src="images/nImg01.png" alt=""></a>
+							<a href="images/nImg01.png" class="nImg"><img src="images/nImg01.png" alt=""></a>
 						</li>
 						<li class="clearfix">
 							<div class="newsTxt">
@@ -392,7 +405,7 @@
 								<p>2019년 아름지기 기획전시 <고고백서袴袴白書: 우리의 바지, 이천 년 역사를 넘어>에서<br>
 								온지음 옷공방은 고구려 무용수의 옷감을 김호득 작가의 힘 있는 붓 터치로 재현하였습니다.</p>
 							</div>
-							<a href="#" class="nImg"><img src="images/nImg02.jpg" alt=""></a>
+							<a href="images/nImg02.jpg" class="nImg"><img src="images/nImg02.jpg" alt=""></a>
 						</li>
 						<li class="clearfix">
 							<div class="newsTxt">
@@ -400,7 +413,7 @@
 								<p>감각적인 라이프 스타일을 제안하는 ‘KINFOLK’와 ‘Norm Architects’가 공동으로 작업한 프로젝트<br>
 								『The Touch: spaces designed for the senses』에 아름지기 사옥이 소개되었습니다.</p>
 							</div>
-							<a href="#" class="nImg"><img src="images/nImg03.png" alt=""></a>
+							<a href="images/nImg03.png" class="nImg"><img src="images/nImg03.png" alt=""></a>
 						</li>
 					</ul>
 				</div>
