@@ -34,6 +34,7 @@
 			$("#tMenu>li").hover(function(){
 				var i = $(this).index();
 				$("#tMenu>li").eq(i).find("ul#sMenu").stop().slideDown(300);
+				$("#tMenu>li").removeClass().eq(i).addClass("active")
 			},function(){
 				$("ul#sMenu").stop().slideUp(300);
 			});
@@ -62,7 +63,7 @@
 	<header id="header">
 		<nav id="navTop" class="clearfix">
 			<h2 class="tLogo"><a href="index.html"><img src="images/logoH.png" alt=""></a></h2>
-			<ul id="tMenu" class="clearfix">
+			<ul id="tMenu" class="sO_two_smenu clearfix">
 				<li class="active">
 					<a href="#">재단소개</a>
 					<ul id="sMenu">
@@ -121,9 +122,11 @@
 			<div class="history_box">
 				<div class="history_box1">
 					<img src="images/history01.png" alt="">
+					<img src="images/history01.png" alt="" class="mob_his">
 				</div>
 				<div class="history_box2">
 					<img src="images/history02.png" alt="">
+					<img src="images/history02.png" alt="" class="mob_his">
 				</div>
 			</div>
 		</div>
