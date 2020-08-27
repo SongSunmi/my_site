@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>아름지기</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script>
+		$(function(){
+			
+
+			$("#Toggle").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(this).addClass("change");
+					$("#tMenu").stop().animate({right:0},300);
+				}
+				else{
+					$(this).removeClass("change");
+					$("#tMenu").stop().animate({right:"-300"},300);
+				}
+			});
+			$("#tMenu>li").hover(function(){
+				var i = $(this).index();
+				$("#tMenu>li").eq(i).find("ul#sMenu").stop().slideDown(300);
+				$("#tMenu>li").removeClass().eq(i).addClass("active")
+			},function(){
+				$("ul#sMenu").stop().slideUp(300);
+			});
+
+			$(window).scroll(function(){
+				var scrollY = $(window).scrollTop();
+				if(100 < scrollY){
+					$("#navTop").addClass("bg9");
+				}
+				else{
+					$("#navTop").removeClass("bg9");
+				}
+			});
+			$(".art_menu li").click(function(){
+				var i = $(this).index();
+				var num = $()
+				$(".art_menu li").find("p").removeClass().eq(i).addClass("active");
+				$(".art_nav a").hide().eq(i).show();
+				$(".sub_three_txt h4").hide().eq(i).show();
+				$(".sub_three_art>div").hide().eq(i).show();
+				return false;
+			});
+			
+			
+		});
+	</script>
+</head>
+<body>
+	<header id="header">
+		<nav id="navTop" class="clearfix">
+			<h2 class="tLogo"><a href="index.html"><img src="images/logoH.png" alt=""></a></h2>
+			<ul id="tMenu" class="sO_two_smenu clearfix">
+				<li>
+					<a href="#">재단소개</a>
+					<ul id="sMenu">
+						<li><a href="sub01_1.html">아름지기는</a></li>
+						<li><a href="sub01_2.html">지나온 길</a></li>
+						<li><a href="sub01_3.html">찾아오시는 길</a></li>
+					</ul>
+				</li>
+				<li><a href="sub02.html">프로그램</a></li>
+				<li class="active">
+					<a href="#">아트숍</a>
+				</li>
+				<li>
+					<a href="sub04.html">아름지기 소식</a>
+				</li>
+			</ul>
+			<div id="Toggle" class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</nav>
+	</header>
+	<div class="art_visual">
+		<h3>아트숍</h3>
+	</div>
+	<div class="sub_three_content">
+		<div class="cTop"> 
+			<div class="sub_nav">
+				<a href="#"><i class="fas fa-home"></i></a>
+				    >  
+				<a href="#">아트숍</a>
+					>  
+				<div class="art_nav">
+					<a href="#" class="art1">식기</a>
+					<a href="#" class="art2">소품</a>
+					<a href="#" class="art3">전시도록</a>
+				</div>
+			</div>
+			<div class="sub_three_txt">
+				<h4 class="art1">식기</h4>
+				<h4 class="art2">소품</h4>
+				<h4 class="art3">전시도록</h4>
+			</div>
+		</div>
+		<div class="sub_three_art">
+			<ul class="art_menu clearfix">
+				<li><a href="#"><p class="active">식기</p> <i class="fas fa-angle-right"></i></a></li>
+				<li><a href="#"><p>소품</p> <i class="fas fa-angle-right"></i></a></li>
+				<li><a href="#"><p>전시도록</p> <i class="fas fa-angle-right"></i></a></li>
+			</ul>
+			<div class="art1">
+				<div class="art_main"><img src="images/img10.jpg" alt=""></div>
+				<ul class="clearfix">
+					<li>
+						<img src="images/sub_art1_01.jpg" alt="">
+						<div class="tBox">
+							<h4>방짜 백동 볼</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art1_02.jpg" alt="">
+						<div class="tBox">
+							<h4>티 스트레이너</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art1_03.jpg" alt="">
+						<div class="tBox">
+							<h4>은 서빙 스푼</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art1_04.jpg" alt="">
+						<div class="tBox">
+							<h4>은 서빙 젓가락</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art1_05.jpg" alt="">
+						<div class="tBox">
+							<h4>12각 주병과 잔</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art1_06.jpg" alt="">
+						<div class="tBox">
+							<h4>백자 전접시</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="art2">
+				<div class="art_main"><img src="images/img12.jpg" alt=""></div>
+				<ul class="clearfix">
+					<li>
+						<img src="images/sub_art2_01.jpg" alt="">
+						<div class="tBox">
+							<h4>도트무늬  가방, 주머니</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art2_02.jpg" alt="">
+						<div class="tBox">
+							<h4>노방 봉지</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art2_03.jpg" alt="">
+						<div class="tBox">
+							<h4>천연양모 직사각 파우치</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art2_04.jpg" alt="">
+						<div class="tBox">
+							<h4>천연양모 카드지갑</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art2_05.jpg" alt="">
+						<div class="tBox">
+							<h4>초</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art2_06.jpg" alt="">
+						<div class="tBox">
+							<h4>한지 테이블매트</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="art3">
+				<div class="art_main"><img src="images/img13.jpg" alt=""></div>
+				<ul class="clearfix">
+					<li>
+						<img src="images/sub_art3_01.jpg" alt="">
+						<div class="tBox">
+							<h4>저고리, 그리고 소재를 이야기하다</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art3_02.jpg" alt="">
+						<div class="tBox">
+							<h4>포(袍), 선비 정신을 입다</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art3_03.jpg" alt="">
+						<div class="tBox">
+							<h4>생활속의 아름다움-아름지기 가구展</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art3_04.jpg" alt="">
+						<div class="tBox">
+							<h4>한옥 공간의 새로운 이야기展</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art3_05.jpg" alt="">
+						<div class="tBox">
+							<h4>우리 옷, 배자展</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/sub_art3_06.jpg" alt="">
+						<div class="tBox">
+							<h4>생활속의 아름다움-목공예展</h4>
+							<a href="#" class="btn">
+								<div class="fffBox"></div>
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="fWrap">
+			<a href="#" class="logo_footer"><img src="images/logoF.png"></a>
+			<div class="fTxt">
+				<ul class="clearfix ftTop">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">사업자정보확인</a></li>
+				</ul>
+				<ul class="clearfix ftMid">
+					<li>
+						<p>재단법인 아름지기</p>
+					</li>
+					<li>
+						<p>대표자 : 신연균</p>
+					</li>
+					<li>
+						<p>서울특별시 종로구 효자로 17</p>
+					</li>
+				</ul>
+				<ul class="clearfix ftBottom">
+					<li>
+						<p>사업자등록번호 : 101-82-08989</p>
+					</li>
+					<li>
+						<p>통신판매신고 : 제 2016-서울종로-0978호</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

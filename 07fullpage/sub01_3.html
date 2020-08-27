@@ -22,7 +22,7 @@
 
 			$("#Toggle").click(function(){
 				var toggle = $(this).attr("class");
-				if(toggle == "sToggleMenu"){
+				if(toggle == "toggleMenu"){
 					$(this).addClass("change");
 					$("#tMenu").stop().animate({right:0},300);
 				}
@@ -41,12 +41,18 @@
 
 			$(window).scroll(function(){
 				var scrollY = $(window).scrollTop();
-				if(50 < scrollY){
-					$("#navTop").addClass("bgw");
+				if(100 < scrollY){
+					$("#navTop").addClass("bg9");
 				}
 				else{
-					$("#navTop").removeClass("bgw");
+					$("#navTop").removeClass("bg9");
 				}
+			});
+			$(".history_btn>div").click(function(){
+				var i = $(this).index();
+				$(".history_btn>div").removeClass().eq(i).addClass("main_color");
+				$(".history_box>div").hide().eq(i).show();
+				return false;
 			});
 			
 			
@@ -56,14 +62,14 @@
 <body>
 	<header id="header">
 		<nav id="navTop" class="clearfix">
-			<h2 class="tLogo"><a href="index.html"><img src="images/logoH_dark.png" alt=""></a></h2>
-			<ul id="tMenu" class="sub_one clearfix">
+			<h2 class="tLogo"><a href="index.html"><img src="images/logoH.png" alt=""></a></h2>
+			<ul id="tMenu" class="sO_two_smenu clearfix">
 				<li class="active">
 					<a href="#">재단소개</a>
 					<ul id="sMenu">
-						<li><a href="#">아름지기는</a></li>
+						<li><a href="sub01_1.html">아름지기는</a></li>
 						<li><a href="sub01_2.html">지나온 길</a></li>
-						<li><a href="sub01_3.html">찾아오시는 길</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
 					</ul>
 				</li>
 				<li><a href="sub02.html">프로그램</a></li>
@@ -74,47 +80,52 @@
 					<a href="sub04.html">아름지기 소식</a>
 				</li>
 			</ul>
-			<div id="Toggle" class="sToggleMenu">
+			<div id="Toggle" class="toggleMenu">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
 		</nav>
 	</header>
-	<div class="visual">
-		<h3>아름지기는</h3>
+	<div class="map_visual">
+		<h3>찾아오시는 길</h3>
 	</div>
-	<div class="sub_one_content">
+	<div class="sO_three_content">
 		<div class="cTop"> 
 			<div class="sub_nav">
 				<a href="#"><i class="fas fa-home"></i></a>
 				    >  
 				<a href="#">재단소개</a>
 					>  
-				<a href="#">아름지기는</a>
+				<a href="#">찾아오시는 길</a>
 			</div>
-			<div class="sub_txt">
-				<h4>지키다.잇다.나누다</h4>
-				<p>전통은 과거로부터 늘 새롭게 창조되고 끊임없이 진화하는 것입니다.<br>
-				우리 문화의 가치는 더 넓은 곳, 더 먼 미래를 향해 나아가야 합니다.</p>
+			<div class="sO_three_txt">
+				<h4>아름지기의 문은 활짝 열려 있습니다.<br>아름지기의 마음을 나누고 함께 하고 싶으신 분들은 언제라도 문을 두드려 주십시오. </h4>
+				<h5>찾아오시는 길</h5>
 			</div>
 		</div>
-		<div class="sub_CI">
-			<h4>아름지기는 다음과 같은 목표와 활동으로 과거, 현재, 미래를 관통하는<br>
-            우리 문화의 정수를 탐구하여 모범이 되는 사례를 하나하나 만들어가고 있습니다</h4>
-			<ul class="clearfix">
-				<li>
-					<h5>Arumjigi Objectives</h5>
-					<p>· 궁궐 및 자연문화유산 안내매체 디자인 개선사업</p>
-					<p>· 우리의 삶과 문화에 투영되는 한국 전통 문화의 아름다움에 대한 깊은 이해</p>
-					<p>· 품격있는 한국 문화유산의 계승과 확산</p>
-				</li>
-				<li>
-					<h5>Core Activities</h5>
-					<p>· 내일의 문화유산 창조 Heritage Tomorrow</p>
-					<p>· 한국 문화유산 글로벌 브랜딩 Regeneration of Korean Beauty</p>
-				</li>
-			</ul>
+		<div class="sO_three_map clearfix">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.969185978856!2d126.97148556564831!3d37.57934328115164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2bfdb862355%3A0xaa8f2580db0f7e3a!2z7J6s64uo67KV7J24IOyVhOumhOyngOq4sA!5e0!3m2!1sko!2skr!4v1598493023126!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<div class="map_txt">
+				<div class="clearfix">
+					<h4>Address</h4>
+					<p>(03044)서울시 종로구 효자로 17</p>
+				</div>
+				<div class="clearfix">
+					<h4>Tel</h4>
+					<div class="tel_p">
+						<p>경영지원팀 741-8373</p>
+						<p>디자인팀 741-8387</p>
+						<p>홍보기획팀 741-8375</p>
+					</div>
+				</div>
+				<div class="clearfix">
+					<h4>E-mail</h4>
+					<p>arum@arumjigi.org</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer id="footer">
