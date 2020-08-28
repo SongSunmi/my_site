@@ -1402,7 +1402,7 @@ body{
 	.qna_box .input:last-child{margin-bottom: 8px;}
 	.qna_box .input strong{font-size: 14px;font-weight: 600; padding: 20px;vertical-align: top;}
 	.qna_box .input input{width: 50%;height: 20px;}
-	.qna_box .input select{width: 18%;height: 20px;}
+	.qna_box .input select{width: 30%;height: 20px;}
 	.qna_box .input textarea{width: 60%;}
 	.qna_box button{
 		width: 100px;height: 30px;border: none;background: #ddd;margin-left: 100px;
