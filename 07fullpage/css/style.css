@@ -686,6 +686,12 @@ body{
 	.notice_box>div:nth-child(2) li div.qna_title{width: 70%;cursor: pointer;}
 	.notice_box>div:nth-child(2) li div.qna_view{width: 15%;text-align: center;}
 
+	.notice2,
+	.notice3,
+	.sub_nav a.notice2,
+	.sub_nav a.notice3{display: none;}
+	.notice_nav{display: inline-block;}
+
 
 }
 	
@@ -1412,6 +1418,12 @@ body{
 	.notice_box>div:nth-child(2) li div.qna_no{width: 10%;text-align: center;margin-right: 4%;}
 	.notice_box>div:nth-child(2) li div.qna_title{width: 76%;cursor: pointer;}
 	.notice_box>div:nth-child(2) li div.qna_view{width: 10%;text-align: center;}
+
+	.notice2,
+	.notice3,
+	.sub_nav a.notice2,
+	.sub_nav a.notice3{display: none;}
+	.notice_nav{display: inline-block;}
 }
 
 	
@@ -2097,6 +2109,11 @@ body{
 	.notice_box>div:nth-child(2) li div.qna_title{width: 76%;cursor: pointer;}
 	.notice_box>div:nth-child(2) li div.qna_view{width: 10%;text-align: center;}
 
+	.notice2,
+	.notice3,
+	.sub_nav a.notice2,
+	.sub_nav a.notice3{display: none;}
+	.notice_nav{display: inline-block;}
 
 	
 }

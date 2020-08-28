@@ -52,6 +52,8 @@
 				var i = $(this).index();
 				$(".notice_btn>div").removeClass().eq(i).addClass("main_color");
 				$(".notice_box>div").hide().eq(i).show();
+				$(".notice_nav a").hide().eq(i).show();
+				$(".sub_four_txt h4").hide().eq(i).show();
 				return false;
 			});
 			$(".notice_img").colorbox({
@@ -101,10 +103,14 @@
 				    >  
 				<a href="#">아름지기 소식</a>
 					>  
-				<a href="#">New&Press</a>
+				<div class="notice_nav">
+					<a href="#" class="notice1">News&Press</a>
+					<a href="#" class="notice2">Q&A</a>
+				</div>
 			</div>
 			<div class="sub_four_txt">
-				<h4>News & Press</h4>
+				<h4 class="notice1">News & Press</h4>
+				<h4 class="notice2">Q&A</h4>
 			</div>
 		</div>
 		<div class="sub_four_notice">
