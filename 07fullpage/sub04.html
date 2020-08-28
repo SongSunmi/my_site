@@ -48,10 +48,10 @@
 					$("#navTop").removeClass("bg9");
 				}
 			});
-			$(".history_btn>div").click(function(){
+			$(".notice_btn>div").click(function(){
 				var i = $(this).index();
-				$(".history_btn>div").removeClass().eq(i).addClass("main_color");
-				$(".history_box>div").hide().eq(i).show();
+				$(".notice_btn>div").removeClass().eq(i).addClass("main_color");
+				$(".notice_box>div").hide().eq(i).show();
 				return false;
 			});
 			
@@ -109,28 +109,116 @@
 				<div class="btn2">Q&A</div>
 			</div>
 			<div class="notice_box">
-				<ul>
-					<li class="clearfix title">
-						<div class="notice_no">No</div>
-						<div class="notice_title">제목</div>
-						<div class="notice_img"></div>
-					</li>
-					<li class="clearfix">
-						<div class="notice_no">3</div>
-						<div class="notice_title">건축문화제 '오픈하우스 서울 2019' 프로그램 참여</div>
-						<div class="notice_img"><img src="images/nImg01.png" alt=""></div>
-					</li>
-					<li class="clearfix">
-						<div class="notice_no">2</div>
-						<div class="notice_title">붓 끝에서 전해지는 멋과 생동감을 담다.</div>
-						<div class="notice_img"><img src="images/nImg02.jpg" alt=""></div>
-					</li>
-					<li class="clearfix">
-						<div class="notice_no">1</div>
-						<div class="notice_title">KINFOLK 'THE TOUCH: Spaces Designed for the Senses'</div>
-						<div class="notice_img"><img src="images/nImg03.png" alt=""></div>
-					</li>
-				</ul>
+				<div>
+					<ul class="news_box">
+						<li class="clearfix title">
+							<div class="notice_no">No</div>
+							<div class="notice_title">제목</div>
+							<div class="notice_img"></div>
+						</li>
+						<li class="clearfix">
+							<div class="notice_no">3</div>
+							<div class="notice_title">
+								<p>건축문화제 '오픈하우스 서울 2019' 프로그램 참여</p>
+								<span>서울의 유명한 건축물을 일반인에게 공개하여 건축이 가지는 의미에 대해 생각하고 공유하는 '오픈하우스 서울'에서 올해도 아름지기 사욕을 찾아주었습니다.</span>
+							</div>
+							<div class="notice_img">
+								<a href="#"><img src="images/nImg01.png" alt=""></a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="notice_no">2</div>
+							<div class="notice_title">
+								<p>붓 끝에서 전해지는 멋과 생동감을 담다.</p>
+								<span>2019년 아름지기 기획전시 <고고백서袴袴白書: 우리의 바지, 이천 년 역사를 넘어>에서
+								온지음 옷공방은 고구려 무용수의 옷감을 김호득 작가의 힘 있는 붓 터치로 재현하였습니다.</span>
+							</div>
+							<div class="notice_img">
+								<a href="#"><img src="images/nImg02.jpg" alt=""></a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="notice_no">1</div>
+							<div class="notice_title">
+								<p>KINFOLK 'THE TOUCH: Spaces Designed for the Senses'</p>
+								<span>감각적인 라이프 스타일을 제안하는 ‘KINFOLK’와 ‘Norm Architects’가 공동으로 작업한 프로젝트
+								『The Touch: spaces designed for the senses』에 아름지기 사옥이 소개되었습니다.</span>
+							</div>
+							<div class="notice_img">
+								<a href="#"><img src="images/nImg03.png" alt=""></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<form action="#" method="post" class="qna_box">
+						<fieldset>
+							<div class="input">
+								<strong>제목</strong>
+								<input type="text">
+							</div>
+							<div class="input">
+								<strong>구분</strong>
+								<select name="golo">
+									<option value="질문유형선택">질문유형 선택</option>
+									<option value="아트숍">아트숍</option>
+									<option value="환경가꾸기">환경가꾸기</option>
+									<option value="기타">기타</option>
+								</select>
+							</div>
+							<div class="input">
+								<strong>내용</strong>
+								<textarea cols="100" rows="6"></textarea>
+							</div>
+						</fieldset>
+						<button type="button" class="btn_ok">확인</button>
+						<button type="button" class="btn_no">취소</button>
+					</form>
+					<ul>
+						<li class="clearfix title">
+							<div class="qna_no">No</div>
+							<div class="qna_title">제목</div>
+							<div class="qna_view">조회수</div>
+						</li>
+						<li class="clearfix">
+							<div class="qna_no">5</div>
+							<div class="qna_title">
+								<p>한옥에서 생활하는 데 불편함은 없나요?</p>
+							</div>
+							<div class="qna_view">1106</div>
+						</li>
+						<li class="clearfix">
+							<div class="qna_no">4</div>
+							<div class="qna_title">
+								<p>아름지기 회원이 되려면 어떻게 해야 하나요?</p>
+							</div>
+							<div class="qna_view">598</div>
+						</li>
+						<li class="clearfix">
+							<div class="qna_no">3</div>
+							<div class="qna_title">
+								<p>한옥 자문을 구하려면 어떻게 해야 하나요?</p>
+							</div>
+							<div class="qna_view">795</div>
+						</li>
+						<li class="clearfix">
+							<div class="qna_no">2</div>
+							<div class="qna_title">
+								<p>아름지기는 한옥을 고쳐주는  곳인가요?</p>
+							</div>
+							<div class="qna_view">916</div>
+						</li>
+						<li class="clearfix">
+							<div class="qna_no">1</div>
+							<div class="qna_title">
+								<p>아름지기 재단이 하는 일은 무엇입니까?</p>
+							</div>
+							<div class="qna_view">1908</div>
+						</li>
+					</ul>
+
+				</div>
+
 			</div>
 		</div>
 	</div>
