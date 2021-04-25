@@ -6,3 +6,5 @@
 * 05tour - https://songsunmi.github.io/my_site/05tour
 * 06company - https://songsunmi.github.io/my_site/06company
 * 07fullpage - https://songsunmi.github.io/my_site/07fullpage
+* portfolio - https://songsunmi.github.io/my_site/portfolio
+* 
