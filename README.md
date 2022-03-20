@@ -7,4 +7,4 @@
 * 06company - https://songsunmi.github.io/my_site/06company
 * 07fullpage - https://songsunmi.github.io/my_site/07fullpage
 * portfolio - https://songsunmi.github.io/my_site/portfolio
-* 
+* portfolio2 - https://songsunmi.github.io/my_site/portfolio2
