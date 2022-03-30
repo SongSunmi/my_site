@@ -13,11 +13,15 @@
     <script src="script/jquery-1.12.3.js"></script>
     <script src="script/common.js"></script>
 </head>
-<body>
+<body class="">
+    <div class="mode">
+        <button type="button" id="Btn">다크모드</button>
+    </div>
    <header id="hd" class="center">
        <h1>
            <a href="#">
-               <img src="images/logo_ver1.svg" alt="logo">
+               <img src="images/logo_ver1.svg" alt="logo" class="basic">
+               <img src="images/logo_ver1_dark.svg" alt="logo_D" class="darkView" style="display:none;">
            </a>
        </h1>
        <nav class="gnb">
@@ -41,7 +45,8 @@
    <div class="in_wrap">
       <section id="pg_one" class="intro center">
           <div class="in_img">
-               <img src="images/main_visual.png" alt="">
+               <img src="images/main_visual.png" alt="" class="basic">
+               <img src="images/main_visual_dark.png" alt="logo_D" class="darkView" style="display:none;">
             </div>
            <div class="in_text">
                 <p>SONG SUN MI<br>PORTFOLIO<br>

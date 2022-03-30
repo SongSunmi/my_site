@@ -15,6 +15,9 @@ body{
     background-color:#fff;
     height:100%;
 }
+button{
+    cursor: pointer;
+}
 
 .clearfix{content:"";display:block;clear:both;}
 
@@ -25,6 +28,35 @@ body{
 @media screen and (min-width: 577px){
 
 .center{width:1200px;margin:0 auto;}
+
+/*mode*/
+.mode{
+    position: fixed;
+    right: 50px;bottom: 20px;
+    z-index: 9999;
+}
+.mode button{
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #888;
+}
+.dark .mode button{
+    background: #333;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.mode button:hover{
+    background: #333;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.dark .mode button:hover{
+    background: #fff;
+    border: 1px solid #888;
+    color: #444;
+}
 
 /*header*/
 #hd{
@@ -60,6 +92,7 @@ body{
     font-weight:bold;
     text-align:center;
 }
+.dark .gnb li>a{color: #eee;}
 .active a{color:#6c82ad;}
 .active:after{
     content:"";display:block;
@@ -78,6 +111,9 @@ body{
     background-image:url(../images/main_bg.png);
     background-repeat:no-repeat;
     background-size:cover;
+}
+.dark .in_wrap{
+    background-image:url(../images/main_bg_dark.png);
 }
 .in_img{
     position:absolute;
@@ -98,6 +134,7 @@ body{
     font-size:  14px;
     line-height: 1.4em;
 }
+.dark .in_text{color: #eee;}
 
 /*about*/
 .about{
@@ -289,7 +326,7 @@ div.pf_detail{
     position:relative;
     overflow:hidden;
     width:100%;height:920px;
-    background-image:url(../images/bg.png);
+    background-image:url(../images/main_bg.png);
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -335,6 +372,25 @@ div.pf_detail{
     
 .center{width:100%;margin:0 auto;}
     
+/*mode*/
+.mode{
+    position: fixed;
+    right: 20px;bottom: 10px;
+    z-index: 9999;
+}
+.mode button{
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #888;
+}
+.dark .mode button{
+    background: #333;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
 /*header*/
 #hd{
     height:70px;
@@ -348,7 +404,7 @@ div.pf_detail{
     background-color:rgba(256,256,256,0.8);
 }
 #hd>h1{
-    width:85px; height:50px;
+    width:55px; height:50px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -369,11 +425,14 @@ div.pf_detail{
     font-weight:bold;
     text-align:center;
 }
+.dark .gnb li>a{
+    color: #eee;
+}
 .active a{color:#6c82ad;}
 .active:after{
     content:"";display:block;
     width:50px;height:0.5px;
-    background-color:#6c82ad;
+    background-color:#ccc;
     position:absolute;
     top:18px;left:50%;
     transform:translateX(-50%);
@@ -384,25 +443,35 @@ div.pf_detail{
     position:relative;
     overflow:hidden;
     width:100%;height:900px;
-    background-image:url(../images/bg_mob.png);
+    background-image:url(../images/main_bgM.png);
     background-repeat:no-repeat;
     background-size:cover;
 }
+.dark .in_wrap{
+    background-image:url(../images/main_bgM_dark.png);
+}
+.in_img{
+    position:absolute;
+    top:40%;left: 50%;
+    transform:translate(-50%,-50%) scale(0.8);
+}
 .in_text{
     position:absolute;
-    top:45%;left:50%;
+    top:55%;right:0%;
     transform:translate(-50%,-50%);
-}
-.in_text h2{
-    font-size:26px;
-    text-align:center;
-    line-height:1.3em;
-    margin-bottom:20px;
+    text-align: right;
 }
 .in_text p{
     font-size: 13px;
-    text-align:center;
     font-weight:500;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+}
+.in_text span{
+    line-height: 1.4em;
+}
+.dark .in_text{
+    color: #eee;
 }
 
 /*about*/
@@ -615,7 +684,7 @@ div.pf_detail{
     position:relative;
     overflow:hidden;
     width:100%;height:920px;
-    background-image:url(../images/bg_mob.png);
+    background-image:url(../images/main_bgM.png);
     background-repeat:no-repeat;
     background-size:cover;
 }
