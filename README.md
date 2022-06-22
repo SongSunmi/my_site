@@ -8,4 +8,5 @@
 * 07fullpage - https://songsunmi.github.io/my_site/07fullpage
 * portfolio - https://songsunmi.github.io/my_site/portfolio
 * portfolio2 - https://songsunmi.github.io/my_site/portfolio2 
+* cineQ - https://songsunmi.github.io/my_site/cineQ
 * 
