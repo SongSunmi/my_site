@@ -31,4 +31,13 @@ $(function(){
         return false;
     });
 
+    $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li").click(function(){
+        page_ready();
+    });
+    
+
 })
+
+function page_ready(){
+        alert('페이지 준비중입니다.');
+}
