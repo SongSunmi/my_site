@@ -31,7 +31,7 @@ $(function(){
         return false;
     });
 
-    $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li").click(function(){
+    $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li,.notice h2 a,.notice_table td.subject a").click(function(){
         page_ready();
     });
     

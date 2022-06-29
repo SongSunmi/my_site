@@ -398,18 +398,73 @@ div.movie5{
 
 /*notice*/
 .notice{
-    height: 500px;
+    height: 600px;
     /*background: #f4f4f4;*/
     border-top: 1px solid #ccc;
     padding-top: 50px;
 }
 .notice h2{
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 24px;
-    margin-bottom: 40px;
-    color: #666;
+    margin-bottom: 30px;
+    color: #222;
 }
+.notice h2 img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+.notice .notice_wrap .notice_table{
+    border-top: 2px solid #e60012;
+    border-collapse: collapse;
+    width: 1050px;
+    table-layout: fixed;
+}
+.notice .notice_wrap .notice_table tr{
+    border-bottom: 1px solid #eee;
+}
+.notice .notice_wrap .notice_table th{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
+    border-bottom: 1px solid #aaa;
+}
+.notice .notice_wrap .notice_table td{
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice .notice_wrap .notice_table td.subject{}
+.notice .notice_wrap .notice_table td.subject a{
+    text-align: left;
+    padding-left: 20px;
+    color: #777;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice .notice_wrap .notice_table td.subject a:hover{
+    color: #444;
+}
+.notice .notice_wrap .btn_wrap{
+    margin-top: 30px;
+}
+.notice .notice_wrap .btn_wrap a{
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    /*background: #aaa;*/
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    /*font-weight: 500;*/
+    color: #666;
+
+}
+
 
 
 }
