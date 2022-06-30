@@ -34,6 +34,19 @@ $(function(){
     $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li,.notice h2 a,.notice_table td.subject a").click(function(){
         page_ready();
     });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>500){
+            $(".top_btn").fadeIn();
+        }else{
+            $(".top_btn").fadeOut();
+        }
+    });
+
+    $(".top_btn").click(function(){
+        $("html,body").animate({scrollTop:0},300);
+        return false;
+    });
     
 
 })

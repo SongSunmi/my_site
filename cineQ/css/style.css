@@ -12,7 +12,7 @@ body{
     font-size:12px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
-    color:#444;
+    color:#222;
     background-color:#fff;
     height:100%;
 }
@@ -398,7 +398,7 @@ div.movie5{
 
 /*notice*/
 .notice{
-    height: 600px;
+    height: 560px;
     /*background: #f4f4f4;*/
     border-top: 1px solid #ccc;
     padding-top: 50px;
@@ -464,8 +464,29 @@ div.movie5{
     color: #666;
 
 }
+.top_btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #444;
+    z-index: 9999;
+}
 
-
+/*footer*/
+#footer{
+    height: 300px;
+    background: #f4f4f4;
+    padding-top: 30px;
+}
 
 }
 
