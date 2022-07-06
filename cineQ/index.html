@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>씨네Q</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
@@ -29,6 +29,11 @@
                 <a href="#">비회원예매내역</a>
             </li>
         </ul>
+    </div>
+    <div class="toggle_menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
     <h1>
         <a href="index.html">
@@ -85,7 +90,10 @@
        <a href="#" class="simple_rsv">간편예매</a>
     </div>
    </header>
-   <div class="flex center">
+   <div class="m_menu">
+       
+   </div>
+   <div class="flex center clearfix">
         <div class="movie1">
             <div class="mov_ex">
                 <span class="kind">개봉 예정작</span>
@@ -127,6 +135,50 @@
             </div>
         </div>
    </div>
+   <div class="mobile_flex">
+       <div class="m_flex center clearfix">
+            <div class="movie1">
+                <div class="mov_ex">
+                    <span class="kind">개봉 예정작</span>
+                    <span class="title_ko">헤어질 결심</span>
+                    <span class="title_en">Decision To Leave</span>
+                    <span class="desc">짙어지는 의심, 깊어지는 관심</span>
+                </div>
+            </div>
+            <div class="movie2">
+                <div class="mov_ex">
+                    <span class="kind">현재 상영작</span>
+                    <span class="title_ko">탑건: 매버릭</span>
+                    <span class="title_en">Top Gun: Maverick</span>
+                    <span class="desc">한순간의 실수도 용납되지 않는 하늘 위, 가장 압도적인 비행이 시작된다.</span>
+                </div>
+            </div>
+            <div class="movie3">
+                <div class="mov_ex">
+                    <span class="kind">현재 상영작</span>
+                    <span class="title_ko">버즈 라이트이어</span>
+                    <span class="title_en">Lightyear</span>
+                    <span class="desc">우주 저 너머 무한한 모험의 시작</span>
+                </div>
+            </div>
+            <div class="movie4">
+                <div class="mov_ex">
+                    <span class="kind">현재 상영작</span>
+                    <span class="title_ko">마녀(魔女) Part2. The Other One</span>
+                    <span class="title_en">The Witch : Part2. The Other One</span>
+                    <span class="desc">모든 것의 시작, 더욱 거대하고 강력해진 마녀가 온다.</span>
+                </div>
+            </div>
+            <div class="movie5">
+                <div class="mov_ex">
+                    <span class="kind">현재 상영작</span>
+                    <span class="title_ko">경아의 딸</span>
+                    <span class="title_en">Gyeong-ah's Daughter</span>
+                    <span class="desc">흔들려도 나아가는 우리들의 이야기</span>
+                </div>
+            </div>
+       </div>
+   </div>
     <div class="content center">
         <ul class="con_nav clearfix">
             <li>
@@ -152,6 +204,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the_roundup.jpg" alt="범죄도시2">
@@ -163,6 +218,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the-other-one_part2.jpg" alt="마녀(魔女) Part2">
@@ -174,6 +232,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/Lightyear.jpg" alt="버즈 라이트이어">
@@ -185,6 +246,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/top-gun_maverick.jpg" alt="탑건: 매버릭">
@@ -196,6 +260,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/i-am-more.jpg" alt="모어">
@@ -207,6 +274,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/please-make-me-look-pretty.jpg" alt="니얼굴">
@@ -218,6 +288,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/gyeong-ah's-daughter.jpg" alt="경아의 딸">
@@ -229,6 +302,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                 </ul>
                 <ul class="lr clearfix" style="display: none;">
@@ -242,6 +318,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the-other-one_part2.jpg" alt="마녀(魔女) Part2">
@@ -253,6 +332,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the_roundup.jpg" alt="범죄도시2">
@@ -264,6 +346,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/broker.jpg" alt="브로커">
@@ -275,6 +360,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/top-gun_maverick.jpg" alt="탑건: 매버릭">
@@ -286,6 +374,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/please-make-me-look-pretty.jpg" alt="니얼굴">
@@ -297,6 +388,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/i-am-more.jpg" alt="모어">
@@ -308,6 +402,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/gyeong-ah's-daughter.jpg" alt="경아의 딸">
@@ -319,6 +416,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                 </ul>
                 <ul class="cs clearfix" style="display: none;">
@@ -332,6 +432,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the-boxer.jpg" alt="갓길로 달리는 코뿔소">
@@ -343,6 +446,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/please-make-me-look-pretty.jpg" alt="니얼굴">
@@ -354,6 +460,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/ani.jpg" alt="윌벤져스">
@@ -365,6 +474,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/decision-to-leave.jpg" alt="헤어질 결심">
@@ -376,6 +488,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/the-undearable-weight-of-massive-talent.jpg" alt="미친 능력">
@@ -387,6 +502,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/c'mon-c'mon.jpg" alt="컴온 컴온">
@@ -398,6 +516,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                     <li>
                         <img src="images/movie/violet-evergarden.jpg" alt="극장판 바이올렛 에버가든">
@@ -409,6 +530,9 @@
                             <a href="#" class="btn_movie_detail">상세보기</a>
                             <a href="#" class="btn_movie_ticketing">예매하기</a>
                         </div>
+                        <a href="#" class="m_movie_btn">
+                            예매하기
+                        </a>
                     </li>
                 </ul>
             </div>
