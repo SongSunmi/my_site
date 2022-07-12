@@ -438,7 +438,7 @@ div.movie5{
 .notice{
     height: 540px;
     /*background: #f4f4f4;*/
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd;
     padding-top: 50px;
 }
 .notice h2{
@@ -466,6 +466,15 @@ div.movie5{
     font-weight: 500;
     line-height: 50px;
     border-bottom: 1px solid #aaa;
+}
+.notice .notice_wrap .notice_table th.gubun{
+    width: 100px;
+}
+.notice .notice_wrap .notice_table th.subject{
+    width: 850px;
+}
+.notice .notice_wrap .notice_table th.date{
+    width: 100px;
 }
 .notice .notice_wrap .notice_table td{
     font-size: 14px;
@@ -746,6 +755,8 @@ div.movie5{
     position: relative;
     top: 50px;
     padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
 }
 .content .con_nav{
     padding-left: 20px;
@@ -800,6 +811,7 @@ div.movie5{
     width: 100%;
     height: 380px;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 .content .con_sl{
     margin:0 auto;
@@ -874,8 +886,125 @@ div.movie5{
 .notice{
     position: relative;
     top: 50px;
+    padding: 10px 20px 0 20px;
+    margin-bottom: 20px;
+}
+.notice h2{
+    margin-bottom: 16px;
+}
+.notice h2 a{
+    font-size: 18px;
+}
+.notice h2 img{
+    height: 26px;
+    vertical-align: middle;
+}
+.notice .notice_wrap .notice_table{
+    border-top: 1px solid #e60012;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 50px;
+}
+.notice .notice_wrap .notice_table tr{
+    border-bottom: 1px solid #eee;
+}
+.notice .notice_wrap .notice_table th{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 38px;
+    border-bottom: 1px solid #aaa;
+}
+.notice .notice_wrap .notice_table td{
+    font-size: 13px;
+    line-height: 34px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice .notice_wrap .notice_table .date{
+    display: none;
+}
+.notice .notice_wrap .notice_table th.gubun{
+    width: 20%;
+}
+.notice .notice_wrap .notice_table th.subject{
+    width: 80%;
+}
+.notice .notice_wrap .notice_table td.subject a{
+    text-align: left;
+    padding-left: 5px;
+    color: #777;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.notice .notice_wrap .notice_table td.subject a:hover{
+    color: #444;
+}
+.top_btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 28px;
+    line-height: 56px;
+    text-align: center;
+    color: #444;
+    z-index: 9999;
 }
 
+#footer{
+    position: relative;
+    top: 50px;
+    height: 140px;
+    background: #f4f4f4;
+    padding: 20px 20px 0 20px;
+}
+#footer .center{
+    position: relative;
+}
+#footer .m_n{
+    display: none;
+}
+#footer .contact{
+    display: none;
+}
+#footer .company{
+    width: 100%;
+    margin: 0 auto;
+}
+#footer .company li{
+    float: left;
+    margin-bottom: 10px;
+    width: 25%;
+}
+#footer .company li a{
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+#footer .copyright{
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bfbfbf;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.mr_n{
+    margin-right: none;
+}
 
 }
 

@@ -33,7 +33,7 @@ $(function(){
 
 
     $(window).scroll(function(){
-        if($(this).scrollTop()>500){
+        if($(this).scrollTop()>400){
             $(".top_btn").fadeIn();
         }else{
             $(".top_btn").fadeOut();
@@ -68,44 +68,6 @@ $(function(){
         banner.eq(current).css("left","100%").animate({left:0},400);
     }
     setInterval(banMove,3000);
-
-
-    let curPos = 0;
-    let postion = 0;
-    let start_x, end_x;
-    const IMAGE_WIDTH = 212;
-    const images = document.querySelector(".con_sl ul li") 
-     
-    images.addEventListener('touchstart', touch_start);
-    images.addEventListener('touchend', touch_end);
-     
-    function prev(){
-      if(curPos > 0){
-        postion += IMAGE_WIDTH;
-        images.style.transform = `translateX(${postion}px)`;
-        curPos = curPos - 1;
-      }
-    }
-    function next(){
-      if(curPos < 3){
-        postion -= IMAGE_WIDTH;
-        images.style.transform = `translateX(${postion}px)`;
-        curPos = curPos + 1;
-      }
-    }
-     
-    function touch_start(event) {
-      start_x = event.touches[0].pageX
-    }
-     
-    function touch_end(event) {
-      end_x = event.changedTouches[0].pageX;
-      if(start_x > end_x){
-        next();
-      }else{
-        prev();
-      }
-    }
 
 
 
