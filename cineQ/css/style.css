@@ -603,7 +603,7 @@ div.movie5{
 
 /*header*/
 #hd{
-    height:50px;
+    height:44px;
     position:fixed;
     z-index:9999;
     background: #fff;
@@ -612,15 +612,15 @@ div.movie5{
 #hd .top_menu,
 #hd .header_menu{display: none;}
 #hd .toggle_menu{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    left: 8px; top: 5px;
+    left: 8px; top: 4px;
     cursor: pointer;
     z-index: 1;    
 }
 #hd .toggle_menu div{
-    width: 30px;
+    width: 24px;
     height: 2px;
     background-color: #e60012;
     border-radius: 2px;
@@ -629,41 +629,105 @@ div.movie5{
     transition: 0.3s;
 }
 .bar1{top: 12px;}
-.bar2{top: 20px;}
-.bar3{top: 28px;}
+.bar2{top: 18px;}
+.bar3{top: 24px;}
 #hd .toggle_menu.change div{transition: 0.3s;}
-#hd .toggle_menu.change .bar1{top:18px;transform: rotate(45deg);}
-#hd .toggle_menu.change .bar3{top:18px;transform: rotate(-45deg);}
+#hd .toggle_menu.change .bar1{top:16px;transform: rotate(45deg);}
+#hd .toggle_menu.change .bar3{top:16px;transform: rotate(-45deg);}
 #hd .toggle_menu.change .bar2{opacity: 0;}
 #hd h1{
-    width: 123px;
-    height: 40px;
+    width: 110px;
+    height: 34px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 #hd h1 img{
-    height: 38px;
+    height: 34px;
 }
 
 .m_menu{
     width: 100%;
-    height: 100%;
+    height: 224px;
     position: fixed;
     background: #fff;
-    top: 0;
-    left: -100%;
-    transition: 0.3s;
-    z-index: 10;
+    top: -100%;
+    left: 0;
+    transition: 0.4s;
+    z-index: 999;
 }
+.m_menu_bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+    transition: 0.3s;
+}
+.m_menu .quick_menu{
+    width: 100%;
+    padding: 0px 20px 0 20px;
+    position: absolute;
+    top: 44px;
+    border-bottom: 1px solid #eee;
+}
+.m_menu .quick_menu li{
+    float: left;
+    height: 30px;
+    width: 30%;
+    margin: 10px 3% 10px 0;
+}
+.m_menu .quick_menu li a{
+    font-size: 12px;
+    line-height: 30px;
+    display : inline-block; 
+    font-weight: 500;
+}
+.m_menu .mov_menu{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 94px;
+    border-bottom: 1px solid #eee;
+}
+.m_menu .mov_menu li{
+    float: left;
+    height: 30px;
+    width: 30%;
+    margin-right: 3%;
+}
+.m_menu .mov_menu li a{
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.m_menu .cus_menu{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 174px;
+}
+.m_menu .cus_menu li{
+    float: left;
+    height: 30px;
+    width: 30%;
+    margin-right: 3%;
+}
+.m_menu .cus_menu li a{
+    font-size: 12px;
+    line-height: 30px;
+}
+
+
 .mobile_flex{
     display: block;
     width: 100%;
     height: 340px;
     /*overflow: hidden;*/
     position: relative;
-    top: 50px; 
+    top: 44px; 
 }
 .m_flex{
     width: 100%;
@@ -753,7 +817,7 @@ div.movie5{
 
 .content{
     position: relative;
-    top: 50px;
+    top: 44px;
     padding-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
@@ -809,27 +873,27 @@ div.movie5{
     position: relative;
     padding-left: 20px;
     width: 100%;
-    height: 380px;
+    height: 330px;
     overflow: hidden;
     margin-bottom: 40px;
 }
 .content .con_sl{
     margin:0 auto;
     width: 100%;
-    height: 400px;
+    height: 350px;
     overflow: hidden;
     position: relative;
     overflow-x: scroll;
 }
 .content .con_sl ul{
-    width: 1786px;
+    width: 1530px;
     position: absolute;
     left: 0;
     z-index: 1;
 }
 .content .con_sl ul li{
     float: left;
-    width: 212px;
+    width: 180px;
     height: 375px;
     margin-right: 10px;
     position: relative;
@@ -841,7 +905,7 @@ div.movie5{
     width: 100%;
 }
 .content .con_sl ul li .movie_title{
-    width: 212px;
+    width: 180px;
     height: 30px;
     color: #666;
 }
@@ -866,18 +930,18 @@ div.movie5{
     background: url("../images/movie/icon-rate-all.png") center center no-repeat;
 }
 .content .con_sl ul li .movie_title{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
     margin-bottom: 5px;
 }
 .content .con_sl ul li a.m_movie_btn{
     width: 100%;
-    height: 34px;
+    height: 32px;
     background: #e60012;
     color: #fff;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 34px;
+    font-size: 12px;
+    line-height: 32px;
     border-radius: 4px;
     text-align: center;
     margin: 0 auto;
@@ -885,7 +949,7 @@ div.movie5{
 
 .notice{
     position: relative;
-    top: 50px;
+    top: 44px;
     padding: 10px 20px 0 20px;
     margin-bottom: 20px;
 }
@@ -957,12 +1021,12 @@ div.movie5{
     line-height: 56px;
     text-align: center;
     color: #444;
-    z-index: 9999;
+    z-index: 99;
 }
 
 #footer{
     position: relative;
-    top: 50px;
+    top: 44px;
     height: 140px;
     background: #f4f4f4;
     padding: 20px 20px 0 20px;

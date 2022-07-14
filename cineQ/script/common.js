@@ -50,11 +50,13 @@ $(function(){
         var toggle = $(this).attr("class");
         if(toggle == "toggle_menu"){
             $(this).addClass("change");
-            $(".m_menu").stop().animate({left:0},300);
+            $(".m_menu").stop().animate({top:0},300);
+            $(".m_menu_bg").fadeIn(400);
         }
         else{
             $(this).removeClass("change");
-            $(".m_menu").stop().animate({left:"-100%"},300);
+            $(".m_menu").stop().animate({top:"-100%"},300);
+            $(".m_menu_bg").fadeOut(400);
         }
     });
 
