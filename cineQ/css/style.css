@@ -654,7 +654,6 @@ div.movie5{
     background: #fff;
     top: -100%;
     left: 0;
-    transition: 0.4s;
     z-index: 999;
 }
 .m_menu_bg{
@@ -664,7 +663,6 @@ div.movie5{
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     z-index: 998;
-    transition: 0.3s;
 }
 .m_menu .quick_menu{
     width: 100%;

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>펫시터</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -71,6 +72,18 @@
 				var i = $(this).index();
 				$(".oneWrap li").removeClass().eq(i).addClass("act");
 			});
+
+			$(".toggle_menu").click(function(){
+		        var toggle = $(this).attr("class");
+		        if(toggle == "toggle_menu"){
+		            $(this).addClass("change");
+		            $(".nav").stop().animate({right:0},300);
+		        }
+		        else{
+		            $(this).removeClass("change");
+		            $(".nav").stop().animate({right:"-100%"},300);
+		        }
+		    });
 		});
 
 	</script>
@@ -85,6 +98,11 @@
 					<img class="logo2" src="img/logo02.png" alt="">
 				</a>
 			</h1>
+			<div class="toggle_menu">
+		        <div class="bar1"></div>
+		        <div class="bar2"></div>
+		        <div class="bar3"></div>
+		    </div>
 			<div class="lang">
 				<ul class="clearfix">
 					<li class="act">
@@ -116,7 +134,7 @@
 			<ul class="slider">
 				<li>  
 					<div class="view"> 
-						<img src="img/img_cat03.png" alt="" class="img">
+						<img src="img/img_main05.jpg" alt="" class="img">
 						<div class="visualTxt">
 							<h2>전문 펫시터가<br>돌봐드려요</h2>
 							<p>나와 내 반려동물을 위한 돌봄서비스</p>
@@ -125,7 +143,7 @@
 				</li>
 				<li>  
 					<div class="view"> 
-						<img src="img/img_main05.jpg" alt="" class="img">
+						<img src="img/img_cat03.png" alt="" class="img">
 						<div class="visualTxt">
 							<h2>전문 펫시터가<br>돌봐드려요</h2>
 							<p>나와 내 반려동물을 위한 돌봄서비스</p>
@@ -136,7 +154,7 @@
 					<div class="view"> 
 						<img src="img/img_cat08.jpg" alt="" class="img">
 						<div class="visualTxt">
-							<h2>전문 송선미가<br>돌봐드려요</h2>
+							<h2>전문 펫시터가<br>돌봐드려요</h2>
 							<p>나와 내 반려동물을 위한 돌봄서비스</p>
 						</div>
 					</div>
@@ -156,7 +174,7 @@
 				<ul class="clearfix">
 					<li> <!-- 1 -->
 						<img src="img/img_app.gif" class="appImg">
-						<a href="https://www.dogmate.co.kr" target="blank">
+						<a href="#">
 							<h3><i class="fab fa-app-store"></i></h3>
 							<p>도그메이트 앱 설치</p>
 						</a>

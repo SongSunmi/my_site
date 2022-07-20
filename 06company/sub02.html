@@ -69,6 +69,17 @@
 				$(".sboxWrap>div").hide().eq(liNum).show();
 				return false;
 			});
+			$(".toggle_menu").click(function(){
+		        var toggle = $(this).attr("class");
+		        if(toggle == "toggle_menu"){
+		            $(this).addClass("change");
+		            $(".nav").stop().animate({right:0},300);
+		        }
+		        else{
+		            $(this).removeClass("change");
+		            $(".nav").stop().animate({right:"-100%"},300);
+		        }
+		    });
 		});
 
 	</script>
@@ -83,6 +94,11 @@
 					<img class="logo2" src="img/logo02.png" alt="">
 				</a>
 			</h1>
+			<div class="toggle_menu">
+		        <div class="bar1"></div>
+		        <div class="bar2"></div>
+		        <div class="bar3"></div>
+		    </div>
 			<div class="lang">
 				<ul class="clearfix">
 					<li>
