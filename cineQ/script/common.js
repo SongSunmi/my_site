@@ -77,7 +77,7 @@ $(function(){
 
 
 
-    $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li,.notice h2 a,.notice_table td.subject a,#footer .company a,.m_flex>div").click(function(){
+    $(".top_menu>ul>li>a,.gnb ul li a,.simple_rsv,.flex>div,.con_sl ul li,.notice h2 a,.notice_table td.subject a,#footer .company a,.m_flex>div,.m_menu li a").click(function(){
         page_ready();
     });
 })
